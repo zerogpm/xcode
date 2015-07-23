@@ -24,7 +24,6 @@ int main(int argc, const char * argv[]) {
         //find the differences between destionation and source offset value
         NSTimeInterval interval = destinationOffSet - sourceGMTOffSet;
         NSDate *destinationDate = [[NSDate alloc]initWithTimeInterval:interval sinceDate:TimeZone];
-        NSLog(@"local is %@", destinationDate);
 
         
         employee *bob = [[employee alloc]init];
@@ -37,10 +36,21 @@ int main(int argc, const char * argv[]) {
         Alice.firstname = @"Alice";
         Alice.lastname = @"su";
         Alice.employeeID = 12334;
-        Alice.hireDate = [NSDate dateWithTimeIntervalSinceNow:0];
+        Alice.hireDate = destinationDate;
         
         NSLog(@"First Employee: \n %@", [bob description]);
         NSLog(@"Second Employe: \n %@", Alice);
+        
+        NSFileManager *myFileManger = [NSFileManager defaultManager];
+        NSURL *desktopPath = [myFileManger URLForDirectory:NSDesktopDirectory
+                                                  inDomain:NSUserDomainMask
+                                         appropriateForURL:nil
+                                                    create:NO
+                                                     error:nil];
+        NSURL *saveLocation = [desktopPath URLByAppendingPathComponent:@"photo/bob.plist"];
+        //If you NSLog the two, and you'll see that your two saveLocation.path and saveLocation.absoluteString aren't the same. use saveLocation.path instead.
+        NSLog(@"the path is %@", [saveLocation path]);
+        [NSKeyedArchiver archiveRootObject:bob toFile:[saveLocation path]];
         
     }
     return 0;

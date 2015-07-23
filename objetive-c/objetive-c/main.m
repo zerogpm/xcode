@@ -22,6 +22,8 @@ int main(int argc, const char * argv[]) {
                                                  error:nil];
         
         NSURL *fullpath = [desktopPath URLByAppendingPathComponent:@"photo/linux.txt"];
+        NSLog(@"full path is %@", fullpath);
+        
         NSMutableString *content = [[NSMutableString alloc]initWithContentsOfURL:fullpath encoding:NSUTF8StringEncoding error:nil];
         [content appendString:@"Changed!Change!"];
         
