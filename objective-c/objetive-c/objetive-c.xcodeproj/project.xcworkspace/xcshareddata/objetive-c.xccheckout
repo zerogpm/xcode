@@ -14,7 +14,7 @@
 		<string>https://github.com/zerogpm/xcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>object-c/objetive-c/objetive-c.xcodeproj</string>
+	<string>objective-c/objetive-c/objetive-c.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3AAC4E1394282229D8BF46FA4576B2EFD06708A6</key>
