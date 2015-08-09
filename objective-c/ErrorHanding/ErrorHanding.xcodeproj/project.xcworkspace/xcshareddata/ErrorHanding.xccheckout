@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>FDE8FB37-AD23-4036-B100-6B9151A51FFF</string>
+	<string>70CC433A-FB15-4A85-9988-77F321A04D64</string>
 	<key>IDESourceControlProjectName</key>
 	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,7 +14,7 @@
 		<string>https://github.com/zerogpm/xcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>objective-c/objetive-c/objetive-c.xcodeproj/project.xcworkspace</string>
+	<string>objective-c/ErrorHanding/ErrorHanding.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3AAC4E1394282229D8BF46FA4576B2EFD06708A6</key>

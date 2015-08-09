@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>08CD700B-8C1A-47D8-B265-E606FE482018</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>inheritanceAndOverring</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>3AAC4E1394282229D8BF46FA4576B2EFD06708A6</key>
 		<string>https://github.com/zerogpm/xcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>objective-c/inheritanceAndOverring/inheritanceAndOverring.xcodeproj/project.xcworkspace</string>
+	<string>objective-c/inheritanceAndOverring/inheritanceAndOverring.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3AAC4E1394282229D8BF46FA4576B2EFD06708A6</key>
