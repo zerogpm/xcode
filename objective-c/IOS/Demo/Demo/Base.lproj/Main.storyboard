@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiw-Fo-lrf">
+                                <rect key="frame" x="113" y="96" width="407" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Something" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="osE-4F-DCS">
+                                <rect key="frame" x="113" y="28" width="407" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="ni0-90-bNh"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vS6-eI-eHE">
+                                <rect key="frame" x="113" y="314" width="407" height="30"/>
+                                <state key="normal" title="Click  me">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fws-Px-Vcz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="osE-4F-DCS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="1vY-QI-acB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="osE-4F-DCS" secondAttribute="trailing" constant="64" id="3Rb-Wx-3j6"/>
+                            <constraint firstItem="vS6-eI-eHE" firstAttribute="leading" secondItem="eiw-Fo-lrf" secondAttribute="leading" id="4x3-ci-pZQ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="vS6-eI-eHE" secondAttribute="bottom" constant="256" id="Ley-5m-PhL"/>
+                            <constraint firstItem="vS6-eI-eHE" firstAttribute="leading" secondItem="osE-4F-DCS" secondAttribute="leading" id="ZFu-gM-0gK"/>
+                            <constraint firstItem="osE-4F-DCS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="97" id="Zpc-uJ-N40"/>
+                            <constraint firstItem="vS6-eI-eHE" firstAttribute="trailing" secondItem="osE-4F-DCS" secondAttribute="trailing" id="iMR-CZ-3b2"/>
+                            <constraint firstItem="vS6-eI-eHE" firstAttribute="trailing" secondItem="eiw-Fo-lrf" secondAttribute="trailing" id="wmu-km-jpL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="InputText" destination="osE-4F-DCS" id="mPN-rq-kLN"/>
+                        <outlet property="textBox" destination="eiw-Fo-lrf" id="WvR-88-MDf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

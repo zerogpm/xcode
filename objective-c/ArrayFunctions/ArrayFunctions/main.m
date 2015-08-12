@@ -57,6 +57,43 @@ int main(int argc, const char * argv[]) {
             NSLog(@"%ld: %@", idx, obj);
         }];
         
+        /** 
+         Arrays can be compared for equality with the aptly named isEqualToArray: method, which returns YES when both
+         arrays have the same number of elements and every pair pass an isEqual: comparison. NSArray does not offer the
+         same subset and intersection comparisons as NSSet.
+         **/
+        NSArray *sameGermanMakes = [NSArray arrayWithObjects:@"Mercedes-Benz",
+                                    @"BMW", @"Porsche", @"Opel",
+                                    @"Volkswagen", @"Audi", nil];
+
+        if ([germanMakes isEqualToArray:sameGermanMakes]) {
+            NSLog(@"Oh good, literal arrays are the same as NSArrays");
+        } else {
+            NSLog(@"Oh no, they are not the same");
+        }
+        
+        /** 
+         NSArray provides similar membership checking utilities to NSSet. The containsObject: method works the exact same (it returns YES if the
+         object is in the array, NO otherwise), but instead of member:, NSArray uses indexOfObject:. This either returns the index of the first
+         occurrence of the requested object or NSNotFound if it’s not in the array.Since arrays can contain more than one reference to the same
+         object, it’s possible that the first occurrence isn’t the only one. To find other occurrences, you can use the related
+         indexOfObject:inRange: method.Remember that sets are more efficient for membership checking, so if you’re querying against a large
+         collection of objects, you should probably be using a set instead of an array.
+         **/
+        
+        //Bool Check
+        if([germanMakes containsObject:@"BMW"]){
+            NSLog(@"Found it, BMW is german Car");
+        } else {
+            NSLog(@"Nope Cannot Find it");
+        }
+        
+        NSUInteger index = [germanMakes indexOfObject:@"BMW"];
+        if (index == NSNotFound) {
+            NSLog(@"I cannot find anything");
+        } else {
+            NSLog(@"BMW is at index %ld", index);
+        }
         
 
     }
