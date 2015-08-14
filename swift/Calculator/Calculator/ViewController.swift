@@ -11,6 +11,15 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var display: UILabel!
     var userIsInMiddleOfTypingANumber: Bool = false
+    var displayValue: Double {
+        get {
+            return NSNumberFormatter().numberFromString(display.text!)!.doubleValue
+        }
+        set {
+            display.text = "\(newValue)"
+            userIsInMiddleOfTypingANumber = false
+        }
+    }
     
     @IBAction func apendDigit(sender: UIButton) {
         let digit = sender.currentTitle!
@@ -23,6 +32,14 @@ class ViewController: UIViewController {
         
     }
 
+    var operandStack = Array<Double>()
+    
+    @IBAction func enter() {
+        userIsInMiddleOfTypingANumber = false
+        operandStack.append(displayValue)
+        println("operandStack = \(operandStack)")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
