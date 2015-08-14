@@ -24,7 +24,7 @@
     [self.textBox setText:contents];
     //self.InputText.resignFirstResponder;
     [[self InputText] resignFirstResponder];
-    UIAlertView *myAlert = [[UIAlertView alloc]initWithTitle:@"Alert!" message:contents delegate:nil cancelButtonTitle:@"ok?" otherButtonTitles:nil, nil];
+    UIAlertView *myAlert = [[UIAlertView alloc]initWithTitle:@"Alert!" message:contents delegate:nil cancelButtonTitle:@"go away?" otherButtonTitles:nil, nil];
     
     [myAlert show];
     

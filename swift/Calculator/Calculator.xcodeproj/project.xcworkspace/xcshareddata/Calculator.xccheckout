@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2F80616F-85B3-43CD-96F0-4F5506CD511E</string>
+	<string>59E2B6E7-1017-4133-A37F-DC9456FA808F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Demo</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>3AAC4E1394282229D8BF46FA4576B2EFD06708A6</key>
 		<string>https://github.com/zerogpm/xcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>objective-c/IOS/Demo/Demo.xcodeproj</string>
+	<string>swift/Calculator/Calculator.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3AAC4E1394282229D8BF46FA4576B2EFD06708A6</key>
-		<string>../../../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/zerogpm/xcode.git</string>
