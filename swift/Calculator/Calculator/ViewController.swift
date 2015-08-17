@@ -20,6 +20,17 @@ class ViewController: UIViewController {
             userIsInMiddleOfTypingANumber = false
         }
     }
+    @IBAction func operate(sender: UIButton) {
+        let operation = sender.currentTitle!
+        switch operation {
+            case "✖️":
+            
+//            case "➗":
+//            case "➕":
+//            case "➖":
+            default: break
+        }
+    }
     
     @IBAction func apendDigit(sender: UIButton) {
         let digit = sender.currentTitle!
