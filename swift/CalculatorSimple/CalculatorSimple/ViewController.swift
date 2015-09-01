@@ -28,12 +28,32 @@ class ViewController: UIViewController {
     
     
     @IBAction func tappedNumber(sender: UIButton) {
+        var str:String! = sender.titleLabel!.text
+        var num:Int! = str.toInt()
+        if(num == 0 && total  == 0) {
+            return
+        }
+        
+        if(lastButtonWasMode){
+            lastButtonWasMode = false
+            valueString = ""
+        }
+        
+        valueString = valueString.stringByAppendingString(str)
+        label.text = valueString
+        
+        if(total == 0) {
+            total = valueString.toInt()!
+        }
+        
     }
     
     @IBAction func tappedPlus(sender: AnyObject) {
+        self.MySetMode(1)
     }
     
     @IBAction func tappedMinu(sender: AnyObject) {
+        self.MySetMode(-1)
     }
     
     
@@ -42,14 +62,29 @@ class ViewController: UIViewController {
     
     
     @IBAction func tappedEqual(sender: AnyObject) {
+        if(mode == 0) {
+            return
+        }
+        
+        var iNum:Int = valueString.toInt()!
     }
     
     
     @IBAction func tappedClear(sender: AnyObject) {
+        total = 0
+        mode = 0
+        valueString = ""
+        label.text = "0"
+        lastButtonWasMode = false
     }
     
     func MySetMode(m:Int) {
-        
+        if(total == 0) {
+            return
+        }
+        mode = m
+        lastButtonWasMode = true
+        total = valueString.toInt()!
     }
 
 
