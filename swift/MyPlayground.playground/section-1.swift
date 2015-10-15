@@ -3,14 +3,14 @@
 import UIKit
 
 
-var number = 3
+var daysInMonth = [31,22,34,33,22,212,22,123,22]
 
-var isPrime = true
-
-for var i=2; i<number; i++ {
-    if number % i == 0 {
-        isPrime = false
+func SelectionSort (A : [Int], N: Int) {
+    
+    for(var i = 0 ; i < N - 1; i++) {
+        print("\(i)")
     }
+    
 }
 
-println(isPrime)
+SelectionSort(daysInMonth, N: daysInMonth.count)
