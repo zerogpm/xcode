@@ -78,11 +78,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="zYh-Oa-9lG">
                                 <rect key="frame" x="161" y="123" width="270" height="98"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="zRP-Ti-acn">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="zRP-Ti-acn" customClass="DragImg" customModule="littleMonster" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
                                         <animations/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="FbU-hQ-dK0">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="FbU-hQ-dK0" customClass="DragImg" customModule="littleMonster" customModuleProvider="target">
                                         <rect key="frame" x="175" y="0.0" width="95" height="98"/>
                                         <animations/>
                                     </imageView>
@@ -144,7 +144,6 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="O5u-0A-MYp"/>
                                 <exclude reference="2tT-4J-Ozn"/>
                                 <exclude reference="IG8-iV-lVk"/>
                                 <exclude reference="MLF-Nb-BdF"/>
@@ -155,11 +154,11 @@
                                 <exclude reference="qJO-a4-IcW"/>
                                 <exclude reference="t0R-lf-S3H"/>
                                 <exclude reference="us2-RZ-mkw"/>
+                                <exclude reference="O5u-0A-MYp"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
-                                <include reference="O5u-0A-MYp"/>
                                 <exclude reference="2tT-4J-Ozn"/>
                                 <include reference="IG8-iV-lVk"/>
                                 <exclude reference="MqJ-fG-b38"/>
@@ -170,6 +169,7 @@
                                 <exclude reference="t0R-lf-S3H"/>
                                 <include reference="us2-RZ-mkw"/>
                                 <exclude reference="vQ9-dA-R1I"/>
+                                <include reference="O5u-0A-MYp"/>
                             </mask>
                         </variation>
                     </view>
