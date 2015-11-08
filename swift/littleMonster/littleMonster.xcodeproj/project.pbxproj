@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8716A0521BEFC4340080B675 /* MonsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716A0511BEFC4340080B675 /* MonsterImg.swift */; };
 		872FFE2C1BE69F2C008FD3CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872FFE2B1BE69F2C008FD3CD /* AppDelegate.swift */; };
 		872FFE2E1BE69F2C008FD3CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872FFE2D1BE69F2C008FD3CD /* ViewController.swift */; };
 		872FFE311BE69F2C008FD3CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 872FFE2F1BE69F2C008FD3CD /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8716A0511BEFC4340080B675 /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg.swift; sourceTree = "<group>"; };
 		872FFE281BE69F2C008FD3CD /* littleMonster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = littleMonster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		872FFE2B1BE69F2C008FD3CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		872FFE2D1BE69F2C008FD3CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				872FFE2B1BE69F2C008FD3CD /* AppDelegate.swift */,
 				872FFE2D1BE69F2C008FD3CD /* ViewController.swift */,
+				8716A0511BEFC4340080B675 /* MonsterImg.swift */,
 				872FFE2F1BE69F2C008FD3CD /* Main.storyboard */,
 				879773191BEF314E00D568B6 /* DragImg.swift */,
 				872FFE321BE69F2C008FD3CD /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8716A0521BEFC4340080B675 /* MonsterImg.swift in Sources */,
 				8797731A1BEF314E00D568B6 /* DragImg.swift in Sources */,
 				872FFE2E1BE69F2C008FD3CD /* ViewController.swift in Sources */,
 				872FFE2C1BE69F2C008FD3CD /* AppDelegate.swift in Sources */,

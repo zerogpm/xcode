@@ -67,13 +67,19 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="UO5-Hd-tjE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="UO5-Hd-tjE" customClass="MonsterImg" customModule="littleMonster" customModuleProvider="target">
                                 <rect key="frame" x="-40" y="263" width="528" height="292"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="528" id="iaz-Gk-Sn2"/>
                                     <constraint firstAttribute="height" constant="292" id="w9u-xV-5gx"/>
                                 </constraints>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="-40" y="53" width="528" height="292"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="-40" y="38" width="528" height="292"/>
+                                </variation>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="zYh-Oa-9lG">
                                 <rect key="frame" x="161" y="123" width="270" height="98"/>
@@ -117,6 +123,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="YvG-K1-jhb" secondAttribute="trailing" id="120-jI-9NO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zYh-Oa-9lG" secondAttribute="trailing" constant="-1" id="2tT-4J-Ozn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UO5-Hd-tjE" secondAttribute="bottom" constant="55" id="4bi-Xu-05U"/>
                             <constraint firstItem="ZVT-6x-hCc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DMt-7x-oIv"/>
                             <constraint firstItem="dLN-qS-TOe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="G9O-wr-WXC"/>
                             <constraint firstAttribute="trailing" secondItem="zYh-Oa-9lG" secondAttribute="trailing" constant="19" id="IG8-iV-lVk"/>
@@ -139,11 +146,15 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YvG-K1-jhb" secondAttribute="bottom" id="ovx-TT-xfg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zYh-Oa-9lG" secondAttribute="trailing" constant="-1" id="qJO-a4-IcW"/>
                             <constraint firstItem="zYh-Oa-9lG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="t0R-lf-S3H"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UO5-Hd-tjE" secondAttribute="bottom" constant="45" id="uJE-sN-pMy"/>
                             <constraint firstItem="zYh-Oa-9lG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="us2-RZ-mkw"/>
                             <constraint firstItem="zYh-Oa-9lG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vQ9-dA-R1I"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="O5u-0A-MYp"/>
+                                <exclude reference="4bi-Xu-05U"/>
+                                <exclude reference="uJE-sN-pMy"/>
                                 <exclude reference="2tT-4J-Ozn"/>
                                 <exclude reference="IG8-iV-lVk"/>
                                 <exclude reference="MLF-Nb-BdF"/>
@@ -154,11 +165,14 @@
                                 <exclude reference="qJO-a4-IcW"/>
                                 <exclude reference="t0R-lf-S3H"/>
                                 <exclude reference="us2-RZ-mkw"/>
-                                <exclude reference="O5u-0A-MYp"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
+                                <include reference="O5u-0A-MYp"/>
+                                <exclude reference="4bi-Xu-05U"/>
+                                <exclude reference="avG-fB-5cP"/>
+                                <include reference="uJE-sN-pMy"/>
                                 <exclude reference="2tT-4J-Ozn"/>
                                 <include reference="IG8-iV-lVk"/>
                                 <exclude reference="MqJ-fG-b38"/>
@@ -169,7 +183,6 @@
                                 <exclude reference="t0R-lf-S3H"/>
                                 <include reference="us2-RZ-mkw"/>
                                 <exclude reference="vQ9-dA-R1I"/>
-                                <include reference="O5u-0A-MYp"/>
                             </mask>
                         </variation>
                     </view>
