@@ -19,10 +19,10 @@ class ViewController: UIViewController {
         foodImg.dropTarget = monsterImg
         heartImg.dropTarget = monsterImg
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "ItemDropOnCharacter:", name: "onTargetDropped", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "itemDroppedOnCharacter:", name: "onTargetDropped", object: nil)
     }
     
-    func ItemDropOnCharacter(notif: AnyObject) {
+    func itemDroppedOnCharacter(notif: AnyObject) {
         print("It item was drop")
     }
 

@@ -42,7 +42,7 @@ class DragImg: UIImageView {
             if CGRectContainsPoint(target.frame, position) {
                 
                 NSNotificationCenter.defaultCenter().postNotification(NSNotification(name:
-                    "onTargetDropped:", object: nil))
+                    "onTargetDropped", object: nil))
             }
         }
         
