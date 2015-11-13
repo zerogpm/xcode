@@ -23,6 +23,11 @@ class ViewController: UIViewController {
     let OPQAUE : CGFloat = 1.0
     //only has 3 life
     let MAX_PENALTIES = 3
+    //check if the monster is happy
+    var monsterHappy = false
+    
+    //UInt hold more value than Int
+    var currentItem: UInt32 = 0
     
     var penalties = 0
     //timer for penalty
@@ -45,10 +50,20 @@ class ViewController: UIViewController {
     }
     
     func itemDroppedOnCharacter(notif: AnyObject) {
-        print("It item was drop")
+        monsterHappy = true
+        
+        startTimer()
+        
+        foodImg.alpha = DIM_ALPHA
+        foodImg.userInteractionEnabled = false
+        
+        heartImg.alpha = DIM_ALPHA
+        heartImg.userInteractionEnabled = false
     }
     
     func startTimer() {
+        
+        //reset the timer if the moseter is happy
         if timer != nil {
             timer.invalidate()
         }
@@ -59,35 +74,60 @@ class ViewController: UIViewController {
     
     func changeGameState() {
         
-        penalties++
+        if !monsterHappy {
+            
+            penalties++
+            
+            if penalties == 1 {
+                
+                penalty1Img.alpha = OPQAUE
+                penalty2Img.alpha = DIM_ALPHA
+                
+            } else if penalties == 2 {
+                
+                penalty2Img.alpha = OPQAUE
+                penalty3Img.alpha = DIM_ALPHA
+                
+            } else if penalties >= 3 {
+                
+                penalty3Img.alpha = OPQAUE
+                
+            } else {
+                
+                penalty1Img.alpha = DIM_ALPHA
+                penalty2Img.alpha = DIM_ALPHA
+                penalty3Img.alpha = DIM_ALPHA
+                
+            }
+            
+            if penalties == MAX_PENALTIES {
+                
+                gameOver()
+                
+            }
+
+        }
         
-        if penalties == 1 {
+        let rand = arc4random_uniform(2) // random 0 or 1
+        
+        if rand == 0 {
+            foodImg.alpha = DIM_ALPHA
+            foodImg.userInteractionEnabled = false
             
-            penalty1Img.alpha = OPQAUE
-            penalty2Img.alpha = DIM_ALPHA
-            
-        } else if penalties == 2 {
-            
-            penalty2Img.alpha = OPQAUE
-            penalty3Img.alpha = DIM_ALPHA
-            
-        } else if penalties >= 3 {
-            
-            penalty3Img.alpha = OPQAUE
+            heartImg.alpha = OPQAUE
+            heartImg.userInteractionEnabled = true
             
         } else {
+            heartImg.alpha = DIM_ALPHA
+            foodImg.userInteractionEnabled = false
             
-            penalty1Img.alpha = DIM_ALPHA
-            penalty2Img.alpha = DIM_ALPHA
-            penalty3Img.alpha = DIM_ALPHA
-            
+            foodImg.alpha = OPQAUE
+            foodImg.userInteractionEnabled = true
         }
         
-        if penalties == MAX_PENALTIES {
-            
-            gameOver()
-            
-        }
+        currentItem = rand
+        monsterHappy = false
+        
     }
     
     func gameOver() {
