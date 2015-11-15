@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var penalty1Img: UIImageView!
     @IBOutlet weak var penalty2Img: UIImageView!
     @IBOutlet weak var penalty3Img: UIImageView!
+    @IBOutlet weak var playAgainButton: UIButton!
     
     //partly visiable
     let DIM_ALPHA : CGFloat = 0.2
@@ -173,9 +174,21 @@ class ViewController: UIViewController {
         timer.invalidate()
         monsterImg.playDeathAnimations()
         sfxDeath.play()
-        
+        playAgainButton.hidden = false
     }
 
+    @IBAction func TapPlayAgain(sender: AnyObject) {
+        //start at full life
+        penalty1Img.alpha = DIM_ALPHA
+        penalty2Img.alpha = DIM_ALPHA
+        penalty3Img.alpha = DIM_ALPHA
+        
+        penalties = 0
+        monsterImg.playIdelAnimation()
+        playAgainButton.hidden = true
+        startTimer()
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
