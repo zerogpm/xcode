@@ -115,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="295" y="487"/>
+            <point key="canvasLocation" x="435" y="518"/>
         </scene>
         <!--DetailVC-->
         <scene sceneID="e1r-qj-9qh">
@@ -172,7 +172,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lK7-O4-hhb">
                                                 <rect key="frame" x="0.0" y="31" width="0.0" height="309"/>
                                                 <animations/>
-                                                <mutableString key="text">Human habitation in Shenzhen dates back to ancient times. The earliest archaeological remains so far unearthed are shards from a site at Xiantouling on Mirs Bay, dating back to 5000 BC. From the Han Dynasty (third century BC) onwards, the area around Shenzhen was a center of the salt monopoly, thus meriting special Imperial protection. Salt pans are still visible around the Pearl River area to the west of the city and are commemorated in the name of Yantian District (盐田, meaning “salt fields”)</mutableString>
+                                                <string key="text">Human habitation in Shenzhen dates back to ancient times. The earliest archaeological remains so far unearthed are shards from a site at Xiantouling on Mirs Bay, dating back to 5000 BC. From the Han Dynasty (third century BC) onwards, the area around Shenzhen was a center of the salt monopoly, thus meriting special Imperial protection. Salt pans are still visible around the Pearl River area to the west of the city and are commemorated in the name of Yantian District (盐田, meaning “salt fields”)</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -264,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A8T-Hf-LfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="625" y="759"/>
+            <point key="canvasLocation" x="512" y="590"/>
         </scene>
     </scenes>
     <resources>
