@@ -15,7 +15,8 @@ class girlCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        mainImg.layer.cornerRadius = 5.0
+        mainImg.clipsToBounds = true
     }
     
     func configureCell(image:UIImage, text:String) {
