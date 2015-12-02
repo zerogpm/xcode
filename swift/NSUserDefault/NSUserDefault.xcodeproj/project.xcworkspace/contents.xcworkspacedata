@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DemoGame.xcodeproj">
+      location = "self:NSUserDefault.xcodeproj">
    </FileRef>
 </Workspace>
