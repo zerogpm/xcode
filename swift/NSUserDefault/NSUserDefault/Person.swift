@@ -28,7 +28,8 @@ class Person: NSObject, NSCoding {
     }
     
     func encodeWithCoder(aCoder: NSCoder) {
-        <#code#>
+        aCoder.encodeObject(self.firstName, forKey: "firstName")
+        aCoder.encodeObject(self.lastName, forKey: "lastName")
     }
     
 }

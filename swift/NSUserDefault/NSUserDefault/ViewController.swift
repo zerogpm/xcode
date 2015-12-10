@@ -32,6 +32,9 @@ class ViewController: UIViewController {
         people.append(personB)
         people.append(personC)
         
+        let peopleData = NSKeyedArchiver.archivedDataWithRootObject(people)
+        NSUserDefaults.standardUserDefaults().setObject(peopleData, forKey: "people")
+        NSUserDefaults.standardUserDefaults().synchronize()
         
     }
 
@@ -44,6 +47,15 @@ class ViewController: UIViewController {
         favLabel.text = "Favorite Color: Purp"
         NSUserDefaults.standardUserDefaults().setValue("Purp", forKey: "color")
         NSUserDefaults.standardUserDefaults().synchronize()
+        
+        
+        if let loadPeople = NSUserDefaults.standardUserDefaults().objectForKey("people") as? NSData {
+            if let peopleArray = NSKeyedUnarchiver.unarchiveObjectWithData(loadPeople) as? [Person] {
+                for person in peopleArray {
+                    print(person.firstName)
+                }
+            }
+        }
     }
     
     @IBAction func red(sender: AnyObject) {
