@@ -12,10 +12,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableView: UITableView!
     
-    var girls = ["http://i620.photobucket.com/albums/tt289/laikepo/Pretty%20Girls/LinYingzhen01.jpg",
-        "http://tokyofashion.com/wp-content/uploads/2009/06/fashion-brands-big.jpg",
+    var girls = ["https://s-media-cache-ak0.pinimg.com/736x/7a/1e/4e/7a1e4e05ab12e97409e930951bb086f9.jpg",
+        "https://s-media-cache-ak0.pinimg.com/736x/25/63/e2/2563e2e716dec36a1128157e6c665801.jpg",
         "https://pbs.twimg.com/profile_images/655396221570437122/Lg-OUCC1.jpg",
-        "http://1.bp.blogspot.com/-NrLIjUHEnXc/UjA6up6nIvI/AAAAAAAAUsg/g0trxNmwZ3A/s1600/capture-20130911-051229.png",
+        "https://hearingade.files.wordpress.com/2012/01/tumblr_l977297e3x1qaoz86o1_500.jpg",
         "https://pbs.twimg.com/profile_images/481982697720406016/2LXKwxnC_400x400.jpeg"]
     
     var girlsTitle = ["Chinese Girls", "Japanese Girls", "France Girls", "England Girl", "US girl"]
