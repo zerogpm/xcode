@@ -71,7 +71,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZG-rp-hOv">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="daryl" translatesAutoresizingMaskIntoConstraints="NO" id="xW3-gG-i4T">
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="xW3-gG-i4T">
                                         <rect key="frame" x="180" y="284" width="240" height="288"/>
                                     </imageView>
                                 </subviews>
@@ -104,6 +104,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="AZG-rp-hOv" id="yJx-9b-cBT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,7 +114,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="daryl" width="368" height="610"/>
+        <image name="1" width="368" height="610"/>
         <image name="logo" width="732" height="340"/>
         <image name="shelf" width="865" height="114"/>
     </resources>
