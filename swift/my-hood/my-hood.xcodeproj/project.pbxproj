@@ -15,6 +15,7 @@
 		874FE6721C2E2B0200175230 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874FE6711C2E2B0200175230 /* Post.swift */; };
 		87FE32711C2F0BEE00DA405C /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE32701C2F0BEE00DA405C /* PostCell.swift */; };
 		87FE32741C2F1AE600DA405C /* addPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE32731C2F1AE600DA405C /* addPostVC.swift */; };
+		87FE32781C2FB26700DA405C /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE32771C2FB26700DA405C /* DataServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		874FE6711C2E2B0200175230 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		87FE32701C2F0BEE00DA405C /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		87FE32731C2F1AE600DA405C /* addPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addPostVC.swift; sourceTree = "<group>"; };
+		87FE32771C2FB26700DA405C /* DataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		874FE65D1C2E2A7100175230 /* my-hood */ = {
 			isa = PBXGroup;
 			children = (
+				87FE32761C2FB22800DA405C /* Services */,
 				874FE6701C2E2ADE00175230 /* Model */,
 				87FE326D1C2F0B2500DA405C /* View */,
 				87FE32721C2F1A2A00DA405C /* Controller */,
@@ -95,6 +98,14 @@
 				87FE32731C2F1AE600DA405C /* addPostVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		87FE32761C2FB22800DA405C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				87FE32771C2FB26700DA405C /* DataServices.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				87FE32741C2F1AE600DA405C /* addPostVC.swift in Sources */,
 				874FE6721C2E2B0200175230 /* Post.swift in Sources */,
 				874FE6611C2E2A7100175230 /* ViewController.swift in Sources */,
+				87FE32781C2FB26700DA405C /* DataServices.swift in Sources */,
 				874FE65F1C2E2A7100175230 /* AppDelegate.swift in Sources */,
 				87FE32711C2F0BEE00DA405C /* PostCell.swift in Sources */,
 			);

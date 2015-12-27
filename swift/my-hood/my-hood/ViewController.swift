@@ -12,19 +12,13 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
 
     @IBOutlet weak var tableView: UITableView!
     
-    var posts = [Post]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
-        let post1 = Post(imagePath: "", title: "Testing", postDesc: "Richmind Fuckers need to learn how to park you know, look at this fucking pics")
-        let post2 = Post(imagePath: "", title: "Testing2", postDesc: "post2")
-        posts.append(post1)
-        posts.append(post2)
         
-        tableView.reloadData()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "onPostsLoaded:", name: "postsLoaded", object: nil)
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -33,7 +27,7 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let post = posts[indexPath.row]
+        let post = DataService.instance.loadedPost[indexPath.row]
         
         if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
             cell.configureCell(post)
@@ -51,7 +45,11 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
+        return DataService.instance.loadedPost.count
+    }
+    
+    func onPostsLoaded(notify:AnyObject) {
+        tableView.reloadData()
     }
 
 }
