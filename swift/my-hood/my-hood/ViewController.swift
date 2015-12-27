@@ -17,7 +17,7 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
-        
+        DataService.instance.loadPosts()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "onPostsLoaded:", name: "postsLoaded", object: nil)
     }
 
