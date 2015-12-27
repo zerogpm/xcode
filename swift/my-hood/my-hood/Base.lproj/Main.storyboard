@@ -248,6 +248,9 @@
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cancelBtnPressed:" destination="XM8-cN-Euq" eventType="touchUpInside" id="guN-a1-rlu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.18039215689999999" green="0.51372549020000002" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -265,7 +268,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="LHN-an-WBx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LHN-an-WBx">
                                 <rect key="frame" x="180" y="115" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="2tB-76-b6g"/>
@@ -284,8 +287,11 @@
                                 <rect key="frame" x="180" y="115" width="240" height="240"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="+ Add Pic">
-                                    <color key="titleColor" red="0.98039215690000003" green="0.65490196079999996" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addPicBtnPressed:" destination="XM8-cN-Euq" eventType="touchUpInside" id="Mlh-n6-oyz"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ozd-Qp-zkU">
                                 <rect key="frame" x="20" y="380" width="560" height="30"/>
@@ -305,17 +311,37 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnF-M9-M2W">
-                                <rect key="frame" x="277" y="500" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnF-M9-M2W">
+                                <rect key="frame" x="20" y="490" width="560" height="43"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.51372549020000002" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="Xmn-33-lUK"/>
+                                    <constraint firstAttribute="height" constant="43" id="euW-zx-ZPN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Make Post">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Xmn-33-lUK"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="makePostBtnPress:" destination="XM8-cN-Euq" eventType="touchUpInside" id="AMR-VS-xiN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JnF-M9-M2W" firstAttribute="centerX" secondItem="oRP-ap-8zN" secondAttribute="centerX" id="1Wy-ke-6sX"/>
                             <constraint firstItem="PUb-1S-Kw1" firstAttribute="top" secondItem="ozd-Qp-zkU" secondAttribute="bottom" constant="25" id="3eN-yQ-AVt"/>
                             <constraint firstItem="hgZ-ev-865" firstAttribute="top" secondItem="oRP-ap-8zN" secondAttribute="topMargin" id="4cr-3F-q6C"/>
+                            <constraint firstItem="JnF-M9-M2W" firstAttribute="top" secondItem="PUb-1S-Kw1" secondAttribute="bottom" constant="25" id="55x-DM-obM"/>
+                            <constraint firstItem="JnF-M9-M2W" firstAttribute="leading" secondItem="oRP-ap-8zN" secondAttribute="leadingMargin" id="5Mc-oA-Jd7"/>
                             <constraint firstItem="zTM-sB-sBJ" firstAttribute="centerX" secondItem="LHN-an-WBx" secondAttribute="centerX" id="6lk-bU-fS7"/>
                             <constraint firstItem="LHN-an-WBx" firstAttribute="top" secondItem="hgZ-ev-865" secondAttribute="bottom" constant="42" id="7W8-1J-z7G"/>
+                            <constraint firstItem="JnF-M9-M2W" firstAttribute="trailing" secondItem="oRP-ap-8zN" secondAttribute="trailingMargin" id="8fM-TT-kxw"/>
                             <constraint firstItem="hgZ-ev-865" firstAttribute="leading" secondItem="oRP-ap-8zN" secondAttribute="leadingMargin" constant="-20" id="ELG-RR-nK0"/>
                             <constraint firstItem="ozd-Qp-zkU" firstAttribute="top" secondItem="zTM-sB-sBJ" secondAttribute="bottom" constant="25" id="Ohd-5H-qDd"/>
                             <constraint firstItem="hgZ-ev-865" firstAttribute="top" secondItem="oRP-ap-8zN" secondAttribute="top" id="SCC-2I-bFE"/>
@@ -343,10 +369,15 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="descriptionField" destination="PUb-1S-Kw1" id="Hes-ID-hSs"/>
+                        <outlet property="postImg" destination="LHN-an-WBx" id="fdq-5w-hRj"/>
+                        <outlet property="titleField" destination="ozd-Qp-zkU" id="ofk-rc-T3w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7of-jy-CS4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="890" y="235"/>
+            <point key="canvasLocation" x="671" y="183"/>
         </scene>
     </scenes>
     <resources>

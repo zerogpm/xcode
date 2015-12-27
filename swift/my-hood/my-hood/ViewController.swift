@@ -19,7 +19,7 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
-        let post1 = Post(imagePath: "", title: "Testing", postDesc: "post")
+        let post1 = Post(imagePath: "", title: "Testing", postDesc: "Richmind Fuckers need to learn how to park you know, look at this fucking pics")
         let post2 = Post(imagePath: "", title: "Testing2", postDesc: "post2")
         posts.append(post1)
         posts.append(post2)
