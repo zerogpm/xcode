@@ -8,7 +8,7 @@
 
 import UIKit
 
-class addPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class addPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var postImg: UIImageView!
     @IBOutlet weak var titleField: UITextField!
@@ -48,5 +48,18 @@ class addPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         imagePicker.dismissViewControllerAnimated(true, completion: nil)
         postImg.image = image
+    }
+    
+    //touch anywhere to dismiss the keyboard
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    //dismiss keyboard when press enter key
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        titleField.resignFirstResponder()
+        descriptionField.resignFirstResponder()
+        print(textField)
+        return false
     }
 }
