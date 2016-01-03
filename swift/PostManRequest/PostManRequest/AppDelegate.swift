@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  webRequest
+//  PostManRequest
 //
-//  Created by Jian Su on 11/19/15.
-//  Copyright © 2015 Jian Su. All rights reserved.
+//  Created by Jian Su on 1/2/16.
+//  Copyright © 2016 Jian Su. All rights reserved.
 //
 
 import UIKit
