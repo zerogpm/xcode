@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87A1714A1C38D136007AF716 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A171491C38D136007AF716 /* Person.swift */; };
 		87F75D3D1C389E8300116921 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F75D3C1C389E8300116921 /* AppDelegate.swift */; };
 		87F75D3F1C389E8300116921 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F75D3E1C389E8300116921 /* ViewController.swift */; };
 		87F75D421C389E8300116921 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F75D401C389E8300116921 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87A171491C38D136007AF716 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		87F75D391C389E8300116921 /* PostManRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostManRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F75D3C1C389E8300116921 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87F75D3E1C389E8300116921 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87A171481C38D105007AF716 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87A171491C38D136007AF716 /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		87F75D301C389E8300116921 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +64,7 @@
 		87F75D3B1C389E8300116921 /* PostManRequest */ = {
 			isa = PBXGroup;
 			children = (
+				87A171481C38D105007AF716 /* Model */,
 				87F75D3C1C389E8300116921 /* AppDelegate.swift */,
 				87F75D3E1C389E8300116921 /* ViewController.swift */,
 				87F75D401C389E8300116921 /* Main.storyboard */,
@@ -135,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A1714A1C38D136007AF716 /* Person.swift in Sources */,
 				87F75D3F1C389E8300116921 /* ViewController.swift in Sources */,
 				87F75D3D1C389E8300116921 /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +298,7 @@
 				87F75D4D1C389E8300116921 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
