@@ -15,7 +15,7 @@ class PokeMon {
     private var _descritpion:String!
     private var _type:String!
     private var _defense:String!
-    private var _heigh:String!
+    private var _height:String!
     private var _weight:String!
     private var _baseAttack:String!
     private var _evolution:String!
@@ -39,7 +39,31 @@ class PokeMon {
         let url = NSURL(string: self._pokeMonUrl)!
         Alamofire.request(.GET, url).responseJSON {
             response in let result = response.result
-            print(result.value.debugDescription)
+            
+            if let dict = result.value as? Dictionary<String, AnyObject> {
+                if let weight = dict["weight"] as? String {
+                    self._weight = weight
+                }
+                
+                if let height = dict["height"] as? String {
+                    self._height = height
+                }
+                
+                if let attack = dict["attack"] as? Int {
+                    self._baseAttack = "\(attack)"
+                }
+                
+                if let defense = dict["defense"] as? Int {
+                    self._defense = "\(defense)"
+                }
+                
+                print(self._weight)
+                print(self._height)
+                print(self._baseAttack)
+                print(self._defense)
+                print(result.value.debugDescription)
+            }
+            
         }
     }
 }
