@@ -9,16 +9,21 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
 
     @IBOutlet weak var collection: UICollectionView!
     var pokemon = [PokeMon]()
+    var filterPokemon = [PokeMon]()
     var musicPlayer: AVAudioPlayer!
+    @IBOutlet weak var searchBar: UISearchBar!
+    var inSearchMode = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collection.delegate = self
         collection.dataSource = self
+        searchBar.delegate = self
+        searchBar.returnKeyType = UIReturnKeyType.Done
         initAudio()
         parsePokemonCSV()
     }
@@ -31,6 +36,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             musicPlayer.play()
             sender.alpha = 1.0
         }
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        view.endEditing(true)
     }
     
     func initAudio() {
@@ -67,7 +76,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PokeCell", forIndexPath: indexPath) as? PokeCell {
-            let poke = pokemon[indexPath.row]
+            
+            let poke: PokeMon!
+            
+            if inSearchMode {
+                poke = filterPokemon[indexPath.row]
+            } else {
+                poke = pokemon[indexPath.row]
+            }
+            
+            
             cell.configureCell(poke)
             return cell
         } else {
@@ -77,10 +95,33 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+        let poke: PokeMon!
+        
+        if inSearchMode {
+            poke = filterPokemon[indexPath.row]
+        } else {
+            poke = pokemon[indexPath.row]
+        }
+        
+        performSegueWithIdentifier("PokeMonDetailVC", sender: poke)
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "PokeMonDetailVC" {
+            if let detailVC  = segue.destinationViewController as? PokeMonDetailVC {
+                if let poke = sender as? PokeMon {
+                    detailVC.pokemon = poke
+                }
+            }
+        }
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 718
+        if inSearchMode {
+            return filterPokemon.count
+        }
+        return pokemon.count
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -91,6 +132,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return CGSizeMake(105, 105)
     }
     
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text == nil || searchBar.text == "" {
+            inSearchMode = false
+            view.endEditing(true)
+            collection.reloadData()
+        } else {
+            inSearchMode = true
+            let lower = searchBar.text!.lowercaseString
+            filterPokemon = pokemon.filter({$0.name.rangeOfString(lower) != nil})
+            collection.reloadData()
+        }
+    }
+    
     /**
         As of iOS 7.0, all view controllers set their own status bar style by default, which means they can have black text or white text depending on what looks best for your view controller. If you want to have light text in the status bar, add this code to your view controller:
     **/
@@ -98,6 +152,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
     }
+    
 
 }
 
