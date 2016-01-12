@@ -61,7 +61,24 @@ class PokeMon {
                 print(self._height)
                 print(self._baseAttack)
                 print(self._defense)
-                print(result.value.debugDescription)
+                
+                if let types = dict["types"] as? [Dictionary<String, String>] where types.count > 0 {
+                    if let name = types[0]["name"] {
+                        self._type = name.capitalizedString
+                    }
+                    
+                    if types.count > 1 {
+                        for var x = 1; x < types.count; x++ {
+                            if let name = types[x]["name"] {
+                                self._type! += "/\(name.capitalizedString)"
+                            }
+                        }
+                    }
+                } else {
+                    self._type = ""
+                }
+                
+                print(self._type)
             }
             
         }
