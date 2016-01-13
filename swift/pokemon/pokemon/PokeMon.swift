@@ -96,6 +96,18 @@ class PokeMon {
                         self._descritpion = ""
                     }
                     
+                    if let evloutions = dict["evolutions"] as? [Dictionary<String,AnyObject>] where evloutions.count > 0 {
+                        if let to = evloutions[0]["to"] as? String {
+                            
+                            //Mega is not found
+                            if to.rangeOfString("mega") == nil {
+                                if let url = evloutions[0]["resource_uri"] as? String {
+                                    print(url)
+                                }
+                            }
+                            
+                        }
+                    }
                 }
             }
             
