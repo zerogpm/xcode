@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 enum PostRouter: URLRequestConvertible {
-    static let baseURLString = "http://jsonplaceholder.typicode.com/"
+    static let baseURLString = "http://api.chrissu.design/api/v1/"
     
     case Get(Int)
     case GetAll()
@@ -34,17 +34,18 @@ enum PostRouter: URLRequestConvertible {
         let result: (path: String, parameters: [String: AnyObject]?) = {
             switch self {
             case .Get(let postNumber):
-                return ("posts/\(postNumber)", nil)
+                return ("lesson/\(postNumber)", nil)
             case .GetAll():
-                return ("posts", nil)
+                return ("lesson", nil)
             case .Create(let newPost):
-                return ("posts", newPost)
+                return ("lesson", newPost)
             case .Delete(let postNumber):
-                return ("posts/\(postNumber)", nil)
+                return ("lesson/\(postNumber)", nil)
             }
         }()
         
         let URL = NSURL(string: PostRouter.baseURLString)!
+        print(result)
         let URLRequest = NSURLRequest(URL: URL.URLByAppendingPathComponent(result.path))
         
         let encoding = Alamofire.ParameterEncoding.JSON

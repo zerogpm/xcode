@@ -14,8 +14,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let postEndpoint: String = "http://api.chrissu.design/api/v1/lesson"
-        Alamofire.request(.GET, postEndpoint).responseJSON { response in
+    
+        Alamofire.request(PostRouter.GetAll()).responseJSON { response in
             guard response.result.error == nil else {
                 print("error calling GET on /posts/1")
                 print(response.result.error!)
@@ -54,7 +54,29 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+//
+//        // MARK: Get Post #1
+//        Post.postByID(1, completionHandler: { result in
+//          if let error = result.error {
+//            // got an error in getting the data, need to handle it
+//            print("error calling POST on /posts")
+//            print(error)
+//            return
+//        }
+//        guard let post = result.value else {
+//            print("error calling POST on /posts: result is nil")
+//            return
+//        }
+//        // success!
+//            print(post.description())
+//            if let title = post.title , body = post.body {
+//                printTitle(title, body: body)
+//            }
+//        })
+    }
 
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87702ADD1C49B631009B1331 /* AlamofireRequest+JSONSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87702ADC1C49B631009B1331 /* AlamofireRequest+JSONSerializable.swift */; };
 		A2A219F71C48578C00A8F72F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A219F61C48578C00A8F72F /* AppDelegate.swift */; };
 		A2A219F91C48578C00A8F72F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A219F81C48578C00A8F72F /* ViewController.swift */; };
 		A2A219FC1C48578C00A8F72F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2A219FA1C48578C00A8F72F /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		4D8AAE9C9122D677F2E6ED52 /* Pods-post.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-post.debug.xcconfig"; path = "Pods/Target Support Files/Pods-post/Pods-post.debug.xcconfig"; sourceTree = "<group>"; };
 		6F42338FB1F75668927E7CC8 /* Pods-post.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-post.release.xcconfig"; path = "Pods/Target Support Files/Pods-post/Pods-post.release.xcconfig"; sourceTree = "<group>"; };
+		87702ADC1C49B631009B1331 /* AlamofireRequest+JSONSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlamofireRequest+JSONSerializable.swift"; sourceTree = "<group>"; };
 		A2A219F31C48578C00A8F72F /* post.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = post.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A219F61C48578C00A8F72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2A219F81C48578C00A8F72F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				A2A219FF1C48578C00A8F72F /* LaunchScreen.storyboard */,
 				A2A21A021C48578C00A8F72F /* Info.plist */,
 				A2A21A081C48584100A8F72F /* Post.swift */,
+				87702ADC1C49B631009B1331 /* AlamofireRequest+JSONSerializable.swift */,
 				A2A21A0A1C485EE800A8F72F /* PostRouter.swift */,
 			);
 			path = post;
@@ -219,6 +222,7 @@
 				A2A21A091C48584100A8F72F /* Post.swift in Sources */,
 				A2A219F91C48578C00A8F72F /* ViewController.swift in Sources */,
 				A2A21A0B1C485EE800A8F72F /* PostRouter.swift in Sources */,
+				87702ADD1C49B631009B1331 /* AlamofireRequest+JSONSerializable.swift in Sources */,
 				A2A219F71C48578C00A8F72F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
