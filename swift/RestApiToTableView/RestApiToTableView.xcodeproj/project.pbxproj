@@ -85,6 +85,7 @@
 				8762C1991C4B5DB000D66EA5 /* AppDelegate.swift */,
 				8762C19B1C4B5DB000D66EA5 /* MasterViewController.swift */,
 				8719A4841C4C090000B5AD1C /* ResponseJSONObjectSerializable.swift */,
+				8719A4881C4C67C700B5AD1C /* AlamofireRequest+JSONSerializable.swift */,
 				8762C1B11C4B667E00D66EA5 /* Gist.swift */,
 				8762C19D1C4B5DB000D66EA5 /* DetailViewController.swift */,
 				8762C19F1C4B5DB000D66EA5 /* Main.storyboard */,
@@ -93,7 +94,6 @@
 				8762C1A71C4B5DB000D66EA5 /* Info.plist */,
 				8762C1AD1C4B61B900D66EA5 /* GitHubAPIManager.swift */,
 				8762C1AF1C4B62FE00D66EA5 /* GistRouter.swift */,
-				8719A4881C4C67C700B5AD1C /* AlamofireRequest+JSONSerializable.swift */,
 			);
 			path = RestApiToTableView;
 			sourceTree = "<group>";

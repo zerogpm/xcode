@@ -34,7 +34,18 @@ class MasterViewController: UITableViewController {
     }
     
     func loadGist() {
-        GitHubAPIManager.sharedInstance.printPublicGists()
+        GitHubAPIManager.sharedInstance.getPublicGists() { result in
+            guard result.error == nil else {
+                print(result.error)
+                // TODO: display error
+                return
+            }
+            
+            if let fetchedGists = result.value {
+                self.gists = fetchedGists
+            }
+            self.tableView.reloadData()
+        }
     }
 
     override func viewWillAppear(animated: Bool) {

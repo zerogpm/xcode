@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Foundation
 import Alamofire
 import SwiftyJSON
 
@@ -22,4 +21,11 @@ class GitHubAPIManager {
             }//end of if statment
         }// end of responseString
     }// end of printPubliceGists function
+    
+    func getPublicGists(completionHandler: (Result<[Gist], NSError>) -> Void) {
+        Alamofire.request(.GET, "https://api.github.com/gists/public")
+            .responseArray { (response:Response<[Gist], NSError>) in
+                completionHandler(response.result)
+        }
+    }
 }
