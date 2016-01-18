@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8719A4851C4C090100B5AD1C /* ResponseJSONObjectSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8719A4841C4C090000B5AD1C /* ResponseJSONObjectSerializable.swift */; };
+		8719A4891C4C67C700B5AD1C /* AlamofireRequest+JSONSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8719A4881C4C67C700B5AD1C /* AlamofireRequest+JSONSerializable.swift */; };
 		8762C19A1C4B5DB000D66EA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8762C1991C4B5DB000D66EA5 /* AppDelegate.swift */; };
 		8762C19C1C4B5DB000D66EA5 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8762C19B1C4B5DB000D66EA5 /* MasterViewController.swift */; };
 		8762C19E1C4B5DB000D66EA5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8762C19D1C4B5DB000D66EA5 /* DetailViewController.swift */; };
@@ -23,6 +25,8 @@
 		624185604DA48A1BD38E658B /* Pods-RestApiToTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestApiToTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestApiToTableView/Pods-RestApiToTableView.release.xcconfig"; sourceTree = "<group>"; };
 		802785CA79AD747A79DA8AC3 /* Pods_RestApiToTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestApiToTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80BAFBD0E7D01FA38A786C58 /* Pods-RestApiToTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestApiToTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RestApiToTableView/Pods-RestApiToTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		8719A4841C4C090000B5AD1C /* ResponseJSONObjectSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseJSONObjectSerializable.swift; sourceTree = "<group>"; };
+		8719A4881C4C67C700B5AD1C /* AlamofireRequest+JSONSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlamofireRequest+JSONSerializable.swift"; sourceTree = "<group>"; };
 		8762C1961C4B5DB000D66EA5 /* RestApiToTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestApiToTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8762C1991C4B5DB000D66EA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8762C19B1C4B5DB000D66EA5 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 			children = (
 				8762C1991C4B5DB000D66EA5 /* AppDelegate.swift */,
 				8762C19B1C4B5DB000D66EA5 /* MasterViewController.swift */,
+				8719A4841C4C090000B5AD1C /* ResponseJSONObjectSerializable.swift */,
 				8762C1B11C4B667E00D66EA5 /* Gist.swift */,
 				8762C19D1C4B5DB000D66EA5 /* DetailViewController.swift */,
 				8762C19F1C4B5DB000D66EA5 /* Main.storyboard */,
@@ -88,6 +93,7 @@
 				8762C1A71C4B5DB000D66EA5 /* Info.plist */,
 				8762C1AD1C4B61B900D66EA5 /* GitHubAPIManager.swift */,
 				8762C1AF1C4B62FE00D66EA5 /* GistRouter.swift */,
+				8719A4881C4C67C700B5AD1C /* AlamofireRequest+JSONSerializable.swift */,
 			);
 			path = RestApiToTableView;
 			sourceTree = "<group>";
@@ -224,10 +230,12 @@
 			files = (
 				8762C19E1C4B5DB000D66EA5 /* DetailViewController.swift in Sources */,
 				8762C1AE1C4B61B900D66EA5 /* GitHubAPIManager.swift in Sources */,
+				8719A4851C4C090100B5AD1C /* ResponseJSONObjectSerializable.swift in Sources */,
 				8762C1B21C4B667E00D66EA5 /* Gist.swift in Sources */,
 				8762C19C1C4B5DB000D66EA5 /* MasterViewController.swift in Sources */,
 				8762C1B01C4B62FE00D66EA5 /* GistRouter.swift in Sources */,
 				8762C19A1C4B5DB000D66EA5 /* AppDelegate.swift in Sources */,
+				8719A4891C4C67C700B5AD1C /* AlamofireRequest+JSONSerializable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
