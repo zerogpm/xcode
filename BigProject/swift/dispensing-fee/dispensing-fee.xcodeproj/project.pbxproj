@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		873159F81C8414790089D698 /* MasterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873159F71C8414790089D698 /* MasterialView.swift */; };
+		873159FC1C84153D0089D698 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873159FB1C84153D0089D698 /* Constants.swift */; };
 		87B068D01C83D09D006052E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B068CF1C83D09D006052E2 /* AppDelegate.swift */; };
 		87B068D21C83D09D006052E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B068D11C83D09D006052E2 /* ViewController.swift */; };
 		87B068D51C83D09D006052E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B068D31C83D09D006052E2 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		873159F71C8414790089D698 /* MasterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterialView.swift; sourceTree = "<group>"; };
+		873159FB1C84153D0089D698 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		87B068CC1C83D09D006052E2 /* dispensing-fee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dispensing-fee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B068CF1C83D09D006052E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87B068D11C83D09D006052E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		873159FA1C8414FA0089D698 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				873159FB1C84153D0089D698 /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		87B068C31C83D09D006052E2 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +74,7 @@
 		87B068CE1C83D09D006052E2 /* dispensing-fee */ = {
 			isa = PBXGroup;
 			children = (
+				873159FA1C8414FA0089D698 /* Util */,
 				87B068E31C83D10D006052E2 /* Resources */,
 				87B068E21C83D0FB006052E2 /* View */,
 				87B068E11C83D0EE006052E2 /* Controller */,
@@ -85,6 +98,7 @@
 		87B068E21C83D0FB006052E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				873159F71C8414790089D698 /* MasterialView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -177,6 +191,8 @@
 			files = (
 				87B068D21C83D09D006052E2 /* ViewController.swift in Sources */,
 				87B068D01C83D09D006052E2 /* AppDelegate.swift in Sources */,
+				873159F81C8414790089D698 /* MasterialView.swift in Sources */,
+				873159FC1C84153D0089D698 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +342,7 @@
 				87B068E01C83D09D006052E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
