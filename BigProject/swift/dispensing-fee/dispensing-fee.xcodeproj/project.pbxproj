@@ -20,9 +20,14 @@
 		87B068E91C83D176006052E2 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87B068E51C83D176006052E2 /* NotoSans-BoldItalic.ttf */; };
 		87B068EA1C83D176006052E2 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87B068E61C83D176006052E2 /* NotoSans-Italic.ttf */; };
 		87B068EB1C83D176006052E2 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87B068E71C83D176006052E2 /* NotoSans-Regular.ttf */; };
+		87FFB1B81C86B36B007A11E7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FFB1B51C86B36B007A11E7 /* Bolts.framework */; };
+		87FFB1B91C86B36B007A11E7 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FFB1B61C86B36B007A11E7 /* FBSDKCoreKit.framework */; };
+		87FFB1BA1C86B36B007A11E7 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FFB1B71C86B36B007A11E7 /* FBSDKLoginKit.framework */; };
+		F9FCFFC6CBBE8E97A8BA9DE9 /* Pods_dispensing_fee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17F25A7272775398C478988 /* Pods_dispensing_fee.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2091D3D6D0050BEDE7070DEB /* Pods-dispensing-fee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dispensing-fee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dispensing-fee/Pods-dispensing-fee.debug.xcconfig"; sourceTree = "<group>"; };
 		8702A42D1C8556EA004EF316 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		8702A42F1C855B59004EF316 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		873159F71C8414790089D698 /* MasterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterialView.swift; sourceTree = "<group>"; };
@@ -38,6 +43,11 @@
 		87B068E51C83D176006052E2 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		87B068E61C83D176006052E2 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
 		87B068E71C83D176006052E2 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		87FFB1B51C86B36B007A11E7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		87FFB1B61C86B36B007A11E7 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		87FFB1B71C86B36B007A11E7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		DEE7D8FE255C87A81575AE3F /* Pods-dispensing-fee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dispensing-fee.release.xcconfig"; path = "Pods/Target Support Files/Pods-dispensing-fee/Pods-dispensing-fee.release.xcconfig"; sourceTree = "<group>"; };
+		E17F25A7272775398C478988 /* Pods_dispensing_fee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dispensing_fee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +55,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87FFB1B81C86B36B007A11E7 /* Bolts.framework in Frameworks */,
+				87FFB1B91C86B36B007A11E7 /* FBSDKCoreKit.framework in Frameworks */,
+				87FFB1BA1C86B36B007A11E7 /* FBSDKLoginKit.framework in Frameworks */,
+				F9FCFFC6CBBE8E97A8BA9DE9 /* Pods_dispensing_fee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15FF5C98BE5285CB7794C2E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2091D3D6D0050BEDE7070DEB /* Pods-dispensing-fee.debug.xcconfig */,
+				DEE7D8FE255C87A81575AE3F /* Pods-dispensing-fee.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B4CFCDD29A4BF0E1FDD3FE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E17F25A7272775398C478988 /* Pods_dispensing_fee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		873159FA1C8414FA0089D698 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +95,8 @@
 			children = (
 				87B068CE1C83D09D006052E2 /* dispensing-fee */,
 				87B068CD1C83D09D006052E2 /* Products */,
+				15FF5C98BE5285CB7794C2E7 /* Pods */,
+				4B4CFCDD29A4BF0E1FDD3FE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +111,7 @@
 		87B068CE1C83D09D006052E2 /* dispensing-fee */ = {
 			isa = PBXGroup;
 			children = (
+				87FFB1B41C86B33B007A11E7 /* frameworks */,
 				873159FA1C8414FA0089D698 /* Util */,
 				87B068E31C83D10D006052E2 /* Resources */,
 				87B068E21C83D0FB006052E2 /* View */,
@@ -120,6 +154,16 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		87FFB1B41C86B33B007A11E7 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87FFB1B51C86B36B007A11E7 /* Bolts.framework */,
+				87FFB1B61C86B36B007A11E7 /* FBSDKCoreKit.framework */,
+				87FFB1B71C86B36B007A11E7 /* FBSDKLoginKit.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87B068DE1C83D09D006052E2 /* Build configuration list for PBXNativeTarget "dispensing-fee" */;
 			buildPhases = (
+				FEDB9BE867F9F1D54066DD86 /* Check Pods Manifest.lock */,
 				87B068C81C83D09D006052E2 /* Sources */,
 				87B068C91C83D09D006052E2 /* Frameworks */,
 				87B068CA1C83D09D006052E2 /* Resources */,
+				481CD7791529536FCC810708 /* Embed Pods Frameworks */,
+				94C0AFB4B0CFA10268D8CE3A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,6 +236,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		481CD7791529536FCC810708 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dispensing-fee/Pods-dispensing-fee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94C0AFB4B0CFA10268D8CE3A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dispensing-fee/Pods-dispensing-fee-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEDB9BE867F9F1D54066DD86 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87B068C81C83D09D006052E2 /* Sources */ = {
@@ -311,8 +406,13 @@
 		};
 		87B068DF1C83D09D006052E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2091D3D6D0050BEDE7070DEB /* Pods-dispensing-fee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dispensing-fee",
+				);
 				INFOPLIST_FILE = "dispensing-fee/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "design.chrissu.dispensing-fee";
@@ -322,8 +422,13 @@
 		};
 		87B068E01C83D09D006052E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEE7D8FE255C87A81575AE3F /* Pods-dispensing-fee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dispensing-fee",
+				);
 				INFOPLIST_FILE = "dispensing-fee/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "design.chrissu.dispensing-fee";
