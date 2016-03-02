@@ -12,8 +12,8 @@ class MaterialTextField: UITextField {
 
   override func awakeFromNib() {
     layer.cornerRadius = 2.0
-    layer.shadowColor = UIColor(red: SHADOW_COLOR, green: SHADOW_COLOR, blue: SHADOW_COLOR, alpha: 0.1).CGColor
-    layer.borderWidth = 1.0
+    layer.shadowColor = UIColor(red: 0.1, green: 0.5, blue: 0.5, alpha: 0.1).CGColor
+    layer.borderWidth = 0.03
   }
   
   //placeholder
@@ -21,7 +21,7 @@ class MaterialTextField: UITextField {
     return CGRectInset(bounds, 10, 0)
   }
   
-  //for edit text field
+  //for edit text
   override func editingRectForBounds(bounds: CGRect) -> CGRect {
     return CGRectInset(bounds, 10, 0)
   }
