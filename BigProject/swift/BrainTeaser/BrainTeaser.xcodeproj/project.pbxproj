@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		87602C871C97D08D009B83D9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87602C861C97D08D009B83D9 /* CustomTextField.swift */; };
 		87602C891C97D4C0009B83D9 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87602C881C97D4C0009B83D9 /* CustomButton.swift */; };
+		87E6325A1C9A744400DF1EFE /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E632591C9A744400DF1EFE /* AnimationEngine.swift */; };
 		87EAAB2A1C97C5C400D89BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EAAB291C97C5C400D89BBB /* AppDelegate.swift */; };
 		87EAAB2C1C97C5C400D89BBB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EAAB2B1C97C5C400D89BBB /* LoginVC.swift */; };
 		87EAAB2F1C97C5C400D89BBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EAAB2D1C97C5C400D89BBB /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		87602C801C97C996009B83D9 /* BrainTeaser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrainTeaser-Bridging-Header.h"; sourceTree = "<group>"; };
 		87602C861C97D08D009B83D9 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		87602C881C97D4C0009B83D9 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		87E632591C9A744400DF1EFE /* AnimationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
 		87EAAB261C97C5C400D89BBB /* BrainTeaser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainTeaser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87EAAB291C97C5C400D89BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87EAAB2B1C97C5C400D89BBB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		87E632581C9A742600DF1EFE /* Utill */ = {
+			isa = PBXGroup;
+			children = (
+				87E632591C9A744400DF1EFE /* AnimationEngine.swift */,
+			);
+			name = Utill;
+			sourceTree = "<group>";
+		};
 		87EAAB1D1C97C5C400D89BBB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 		87EAAB281C97C5C400D89BBB /* BrainTeaser */ = {
 			isa = PBXGroup;
 			children = (
+				87E632581C9A742600DF1EFE /* Utill */,
 				87602C851C97D050009B83D9 /* Controller */,
 				87602C841C97D047009B83D9 /* View */,
 				87EAAB291C97C5C400D89BBB /* AppDelegate.swift */,
@@ -237,6 +248,7 @@
 				87602C891C97D4C0009B83D9 /* CustomButton.swift in Sources */,
 				87EAAB2C1C97C5C400D89BBB /* LoginVC.swift in Sources */,
 				87EAAB2A1C97C5C400D89BBB /* AppDelegate.swift in Sources */,
+				87E6325A1C9A744400DF1EFE /* AnimationEngine.swift in Sources */,
 				87602C871C97D08D009B83D9 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
