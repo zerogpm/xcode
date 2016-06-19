@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InterestingPlaces" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5849712695_1f41c8fbc2_b" translatesAutoresizingMaskIntoConstraints="NO" id="bFe-0l-Bzq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="szj-gO-jVm">
+                                <rect key="frame" x="30" y="488" width="261" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPe-58-ffa">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="IDT-Na-Z4w"/>
+                                            <constraint firstAttribute="height" constant="60" id="XL4-KP-UEe"/>
+                                        </constraints>
+                                        <state key="normal" image="ALANNchair_8960.jpg"/>
+                                        <connections>
+                                            <action selector="selectPlace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ca-tt-47j"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQH-bR-IAB">
+                                        <rect key="frame" x="67" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="NGR-Ml-OeR"/>
+                                            <constraint firstAttribute="height" constant="60" id="fqY-BC-YCa"/>
+                                        </constraints>
+                                        <state key="normal" image="OHNEWbasket07a"/>
+                                        <connections>
+                                            <action selector="selectPlace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RXu-ns-Cgr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24D-DF-Pao">
+                                        <rect key="frame" x="134" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="t6j-N0-ykG"/>
+                                            <constraint firstAttribute="width" constant="60" id="tZf-jN-Ytc"/>
+                                        </constraints>
+                                        <state key="normal" image="KSGARhairball_derek"/>
+                                        <connections>
+                                            <action selector="selectPlace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zlU-gf-apc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDe-QI-FCa">
+                                        <rect key="frame" x="201" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Kda-JY-Dd5"/>
+                                            <constraint firstAttribute="height" constant="60" id="dk7-Th-swV"/>
+                                        </constraints>
+                                        <state key="normal" image="metronome"/>
+                                        <connections>
+                                            <action selector="selectPlace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Peg-SQ-juC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="8Ua-Ch-VNK">
+                                <rect key="frame" x="62" y="292" width="197" height="47"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aS-2A-efF">
+                                        <rect key="frame" x="76" y="0.0" width="45" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Current location unknown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npl-lN-170">
+                                        <rect key="frame" x="0.0" y="27" width="197" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3T7-TL-Z3g">
+                                <rect key="frame" x="148" y="357" width="25" height="25"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gy-w6-Em1">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="6nY-e6-peL"/>
+                                            <constraint firstAttribute="height" constant="25" id="x70-NT-vZW"/>
+                                        </constraints>
+                                        <state key="normal" image="location"/>
+                                        <connections>
+                                            <action selector="startLocationService:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Shc-z6-8w7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ALANNchair_8960.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mqz-Dc-yPy">
+                                <rect key="frame" x="0.0" y="42" width="320" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="XfV-FQ-jYV"/>
+                                    <constraint firstAttribute="height" constant="199" id="YVE-2g-44s"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="szj-gO-jVm" secondAttribute="bottom" constant="20" id="BEZ-8M-3S1"/>
+                            <constraint firstItem="Mqz-Dc-yPy" firstAttribute="centerY" secondItem="bFe-0l-Bzq" secondAttribute="centerY" id="ElS-wo-ckw"/>
+                            <constraint firstItem="bFe-0l-Bzq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GEC-9Y-pRk"/>
+                            <constraint firstItem="3T7-TL-Z3g" firstAttribute="centerX" secondItem="8Ua-Ch-VNK" secondAttribute="centerX" id="MIH-kH-xeu"/>
+                            <constraint firstItem="Mqz-Dc-yPy" firstAttribute="centerX" secondItem="bFe-0l-Bzq" secondAttribute="centerX" id="Uea-yg-YLf"/>
+                            <constraint firstItem="3T7-TL-Z3g" firstAttribute="top" secondItem="8Ua-Ch-VNK" secondAttribute="bottom" constant="17" id="dLh-jG-VcX"/>
+                            <constraint firstItem="bFe-0l-Bzq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="emC-Gb-TIs"/>
+                            <constraint firstItem="8Ua-Ch-VNK" firstAttribute="top" secondItem="bFe-0l-Bzq" secondAttribute="bottom" constant="8" id="ghX-rW-wWz"/>
+                            <constraint firstItem="8Ua-Ch-VNK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="grc-aY-Jg7"/>
+                            <constraint firstAttribute="trailing" secondItem="bFe-0l-Bzq" secondAttribute="trailing" id="qra-1G-vhU"/>
+                            <constraint firstItem="bFe-0l-Bzq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="vEU-bF-bZr"/>
+                            <constraint firstItem="szj-gO-jVm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wIe-ML-BNc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="locationDistance" destination="Npl-lN-170" id="yCu-8c-xOq"/>
+                        <outlet property="placeImage" destination="Mqz-Dc-yPy" id="cvk-Ak-4r6"/>
+                        <outlet property="placeName" destination="0aS-2A-efF" id="exL-a9-R6C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="5849712695_1f41c8fbc2_b" width="1024" height="638"/>
+        <image name="ALANNchair_8960.jpg" width="320" height="480"/>
+        <image name="KSGARhairball_derek" width="280" height="373"/>
+        <image name="OHNEWbasket07a" width="242" height="280"/>
+        <image name="location" width="50" height="50"/>
+        <image name="metronome" width="524" height="303"/>
+    </resources>
+</document>

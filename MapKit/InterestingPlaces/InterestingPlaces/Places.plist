@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>World&apos;s Largest Office Chair</string>
+		<key>Latitude</key>
+		<real>33.6525</real>
+		<key>Longitude</key>
+		<real>-85.8292</real>
+		<key>Image</key>
+		<string>ALANNchair_8960.jpg</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>World&apos;s Largest Basket</string>
+		<key>Latitude</key>
+		<real>40.063502</real>
+		<key>Longitude</key>
+		<real>-82.345305</real>
+		<key>Image</key>
+		<string>OHNEWbasket07a.jpg</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>World&apos;s Largest Hairball</string>
+		<key>Latitude</key>
+		<real>37.960591</real>
+		<key>Longitude</key>
+		<real>-100.870308</real>
+		<key>Image</key>
+		<string>KSGARhairball_derek.jpg</string>
+	</dict>
+  <dict>
+    <key>Name</key>
+    <string>World&apos;s Most Confusing Clock</string>
+    <key>Latitude</key>
+    <real>40.7345854</real>
+    <key>Longitude</key>
+    <real>-73.989688</real>
+    <key>Image</key>
+    <string>metronome.png</string>
+  </dict>
+</array>
+</plist>
