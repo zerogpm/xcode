@@ -29,7 +29,15 @@ class ViewController: UIViewController {
   
   
   @IBAction func startLocationService(sender: AnyObject) {
-    locationManager?.requestWhenInUseAuthorization()
+    
+  }
+  
+  func startLocationService() {
+    if CLLocationManager.authorizationStatus() != .AuthorizedWhenInUse {
+      locationManager?.requestWhenInUseAuthorization()
+    } else {
+      locationManager?.requestLocation()
+    }
   }
   
   @IBAction func selectPlace(sender: AnyObject) {
@@ -42,6 +50,7 @@ class ViewController: UIViewController {
     placeName.text = selectedPlaces?.name
     guard let imageName = selectedPlaces?.imageName, let image = UIImage(named: imageName) else {return}
     placeImage.image = image
+    startLocationService()
   }
   
   func loadPlaces() {
@@ -87,9 +96,13 @@ extension ViewController: CLLocationManagerDelegate {
     }
   }
   
+  func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+    print(error)
+  }
+  
   func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
     if status == .AuthorizedAlways || status == .AuthorizedWhenInUse {
-      locationManager?.startUpdatingLocation()
+      locationManager?.requestLocation()
     }
   }
 }
