@@ -8,9 +8,10 @@ class ViewController: UIViewController {
   @IBOutlet weak var placeImage: UIImageView!
   var locationManager: CLLocationManager?
   var startLocation: CLLocation?
-  
+  @IBOutlet weak var address: UILabel!
   var places:[OldPlace] = []
   var selectedPlaces:OldPlace? = nil
+  var geocoder: CLGeocoder?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -47,6 +48,27 @@ class ViewController: UIViewController {
   }
   
   func updateUI() {
+    
+    if geocoder == nil {
+      geocoder = CLGeocoder()
+    }
+    
+    geocoder?.reverseGeocodeLocation((selectedPlaces?.location)!) {
+      [weak self] (placemarks, error) in
+      if placemarks?.count > 0 {
+        guard let currentPlacemark = placemarks?.first else {
+          return
+        }
+        if let streetNumber = currentPlacemark.subThoroughfare,
+          let street = currentPlacemark.thoroughfare,
+          let city = currentPlacemark.locality,
+          let state = currentPlacemark.administrativeArea
+        {
+          
+          self?.address.text = "\(streetNumber) \(street) \(city), \(state)"
+        }
+      }
+    }
     placeName.text = selectedPlaces?.name
     guard let imageName = selectedPlaces?.imageName, let image = UIImage(named: imageName) else {return}
     placeImage.image = image
