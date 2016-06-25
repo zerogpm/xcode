@@ -53,28 +53,34 @@ class VideoCell: UICollectionViewCell {
   let separatorView: UIView = {
     let view = UIView()
     view.backgroundColor = UIColor.blackColor()
-    view.translatesAutoresizingMaskIntoConstraints = false
     return view
+  }()
+  
+  let userProfileImageView:UIImageView = {
+    let imageView = UIImageView()
+    imageView.backgroundColor = UIColor.greenColor()
+    return imageView
   }()
   
   let thumbnailImageView:UIImageView = {
     let imageView = UIImageView()
     imageView.backgroundColor = UIColor.blueColor()
-    imageView.translatesAutoresizingMaskIntoConstraints = false
     return imageView
   }()
   
   func setupViews() {
     addSubview(thumbnailImageView)
     addSubview(separatorView)
+    addSubview(userProfileImageView)
     
-    addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-16-[v0]-16-|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0" : thumbnailImageView]))
+    addConstraintsWithFormat("H:|-16-[v0]-16-|", views: thumbnailImageView)
     
-    addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-16-[v0]-16-|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0" : thumbnailImageView]))
+    addConstraintsWithFormat("H:|-16-[v0(44)]", views: userProfileImageView)
     
-    addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0" : separatorView]))
+    //vertical constraints
+    addConstraintsWithFormat("V:|-16-[v0]-8-[v1(44)]-16-[v2(1)]|", views: thumbnailImageView, userProfileImageView, separatorView)
     
-    addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[v0(1)]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0" : separatorView]))
+    addConstraintsWithFormat("H:|[v0]|", views: separatorView)
     
     thumbnailImageView.frame = CGRectMake(0, 0, 100, 100)
   }
@@ -83,6 +89,19 @@ class VideoCell: UICollectionViewCell {
     fatalError("init(coder:) has not been implemented")
   }
   
+}
+
+extension UIView {
   
-  
+  func addConstraintsWithFormat(format:String, views:UIView...) {
+    
+    var viewsDictionary = [String:UIView]()
+    for (index, view) in views.enumerate() {
+      let key = "v\(index)"
+      view.translatesAutoresizingMaskIntoConstraints = false
+      viewsDictionary[key] = view
+    }
+    
+    addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(format, options: NSLayoutFormatOptions(), metrics: nil, views: viewsDictionary))
+  }
 }
