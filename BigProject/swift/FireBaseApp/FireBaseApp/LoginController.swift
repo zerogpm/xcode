@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginController: UIViewController {
   
@@ -19,7 +20,7 @@ class LoginController: UIViewController {
     return view
   }()
   
-  let loginRegisterButton:UIButton = {
+  lazy var loginRegisterButton:UIButton = {
     let button = UIButton(type: .System)
     button.backgroundColor = UIColor(r: 80, g: 101, b: 161)
     button.setTitle("Register", forState: .Normal)
@@ -28,8 +29,44 @@ class LoginController: UIViewController {
     button.layer.cornerRadius = 5
     button.layer.masksToBounds = true
     button.translatesAutoresizingMaskIntoConstraints = false
+    
+    button.addTarget(self, action: #selector(handleRegister), forControlEvents: .TouchUpInside)
+    
     return button
   }()
+  
+  func handleRegister() {
+    guard let email = emailTextField.text else {print("email problem"); return }
+    guard let password = passwordTextField.text else {print("password prolem"); return}
+    guard let name = nameTextField.text else {print("problem with name field"); return}
+    
+    FIRAuth.auth()?.createUserWithEmail(email, password: password, completion: { (user:FIRUser?, error) in
+      
+      if error != nil {
+        print(error)
+        return
+      }
+      
+      guard let uid = user?.uid else {return}
+      
+      //successfully authenticated user
+      let ref = FIRDatabase.database().referenceFromURL("https://messageapp-df772.firebaseio.com/")
+      let usersReference = ref.child("user").child(uid)
+      
+      let values = ["name":name, "email":email]
+      usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
+        if err != nil {
+          print(err)
+          return
+        }
+        
+        print("Saved user Successfully into Firebase db")
+        
+      })
+      
+    })
+    
+  }
   
   let nameTextField: UITextField = {
     let tf = UITextField()
