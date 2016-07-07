@@ -15,9 +15,21 @@ class ViewController: UITableViewController {
     super.viewDidLoad()
     
     navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .Plain, target: self, action: #selector(handleLogout))
+    
+    //user is not logged in
+    if FIRAuth.auth()?.currentUser?.uid == nil {
+      performSelector(#selector(handleLogout), withObject: nil)
+    }
   }
   
   func handleLogout() {
+    
+    do {
+      try FIRAuth.auth()?.signOut()
+    } catch let logoutError {
+      print(logoutError)
+    }
+    
     let loginController = LoginController()
     presentViewController(loginController, animated:true,completion:nil)
   }
