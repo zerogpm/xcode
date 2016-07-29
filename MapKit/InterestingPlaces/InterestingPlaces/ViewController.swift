@@ -64,7 +64,6 @@ class ViewController: UIViewController {
           let city = currentPlacemark.locality,
           let state = currentPlacemark.administrativeArea
         {
-          
           self?.address.text = "\(streetNumber) \(street) \(city), \(state)"
         }
       }
