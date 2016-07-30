@@ -124,6 +124,35 @@ extension ViewController: CLLocationManagerDelegate {
   func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
     if status == .AuthorizedAlways || status == .AuthorizedWhenInUse {
       locationManager?.requestLocation()
+      if CLLocationManager.isMonitoringAvailableForClass(CLCircularRegion) {
+        for place in places {
+          let region = CLCircularRegion(center: place.location.coordinate, radius: 500, identifier: place.name)
+          region.notifyOnEntry = true
+          region.notifyOnExit = true
+          locationManager?.startMonitoringForRegion(region)
+        }
+      }
     }
+    locationManager?.startUpdatingLocation()
+  }
+  
+  func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
+    if presentedViewController == nil {
+      let alertController = UIAlertController(title: "Interesting Location Nearby", message: "You are near \(region.identifier). Check it out!", preferredStyle: .Alert)
+      let alertAction = UIAlertAction(title: "OK", style: .Default) {
+        [weak self] action in
+        self?.dismissViewControllerAnimated(true, completion: nil)
+      }
+      alertController.addAction(alertAction)
+      presentViewController(alertController, animated: true, completion: nil)
+    }
+  }
+  
+  func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
+    print("error for")
+  }
+  
+  func locationManager(manager: CLLocationManager, monitoringDidFailForRegion region: CLRegion?, withError error: NSError) {
+    print(error)
   }
 }
