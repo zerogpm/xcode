@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+  <dict>
+    <key>Name</key>
+    <string>Google</string>
+    <key>Type</key>
+    <string>Search and Advertising</string>
+    <key>Image</key>
+    <string>google.jpg</string>
+    <key>Latitude</key>
+    <real>37.4223652</real>
+    <key>Longitude</key>
+    <real>-122.08418599999999</real>
+  </dict>
+	<dict>
+		<key>Name</key>
+		<string>Facebook</string>
+		<key>Type</key>
+		<string>Social Media</string>
+		<key>Image</key>
+		<string>facebook.jpg</string>
+		<key>Latitude</key>
+		<real>37.484575</real>
+		<key>Longitude</key>
+		<real>-122.147924</real>
+	</dict>
+  <dict>
+    <key>Name</key>
+    <string>Apple</string>
+    <key>Type</key>
+    <string>Hardware Manufacturer</string>
+    <key>Image</key>
+    <string>apple.jpg</string>
+    <key>Latitude</key>
+    <real>37.332112</real>
+    <key>Longitude</key>
+    <real>-122.03077589999998</real>
+  </dict>
+</array>
+</plist>
