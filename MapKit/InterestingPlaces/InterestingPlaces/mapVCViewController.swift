@@ -7,29 +7,40 @@
 //
 
 import UIKit
+import MapKit
 
 class mapVCViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  @IBOutlet weak var map: MKMapView!
+  
+  let locationManager = CLLocationManager()
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
+    let appleHQ = CLLocation(latitude: 37.331177, longitude: -122.031641)
+    let regionRadius: CLLocationDistance = 1000.0
+    let region = MKCoordinateRegionMakeWithDistance(appleHQ.coordinate, regionRadius, regionRadius)
+    map.setRegion(region, animated: true)
+    map.delegate = self
+    
+    locationManager.delegate = self
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    locationManager.requestWhenInUseAuthorization()
+  }
+  
+  @IBAction func dissMiss(sender: AnyObject) {
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
+  
+  
+}
 
-    /*
-    // MARK: - Navigation
+extension mapVCViewController: CLLocationManagerDelegate {
+  
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+extension mapVCViewController: MKMapViewDelegate {
+  
+  
+  
 }
