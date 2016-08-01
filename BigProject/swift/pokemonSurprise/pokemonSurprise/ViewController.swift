@@ -14,6 +14,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var mapView: MKMapView!
   
   let locationManager = CLLocationManager()
+  var mapHasCenteredOnce = false
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -23,6 +24,12 @@ class ViewController: UIViewController {
   
   override func viewDidAppear(animated: Bool) {
     locationAuthStatus()
+  }
+  
+  func centerMapOnlocation(location:CLLocation) {
+    let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, 2000, 2000)
+    
+    mapView.setRegion(coordinateRegion, animated: true)
   }
   
   func locationAuthStatus() {
@@ -38,5 +45,34 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: MKMapViewDelegate {
+  func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
+    if let loc = userLocation.location {
+      if !mapHasCenteredOnce {
+        centerMapOnlocation(loc)
+        mapHasCenteredOnce = true
+      }
+    }
+  }
+  
+  func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+    
+    var annotationView: MKAnnotationView?
+    
+    if annotation.isKindOfClass(MKUserLocation.self) {
+      annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "User")
+      annotationView?.image = UIImage(named: "ash")
+    }
+    
+    return annotationView
+  }
+}
+
+extension ViewController: CLLocationManagerDelegate {
+  
+  func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    if status == CLAuthorizationStatus.AuthorizedWhenInUse {
+      mapView.showsUserLocation = true
+    }
+  }
   
 }
