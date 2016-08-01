@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pokemonSurprise" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Jak-ew-Bh0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7l4-52-p5f">
+                                <rect key="frame" x="20" y="531" width="51" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="Kiw-sn-ihO"/>
+                                    <constraint firstAttribute="height" constant="49" id="oeM-fn-0Sn"/>
+                                </constraints>
+                                <state key="normal" image="pokeball"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jak-ew-Bh0" secondAttribute="trailing" id="3c0-qS-ePD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jak-ew-Bh0" secondAttribute="bottom" id="XGM-17-upM"/>
+                            <constraint firstItem="7l4-52-p5f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="bjw-vO-2a5"/>
+                            <constraint firstItem="Jak-ew-Bh0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gvr-CC-QpX"/>
+                            <constraint firstItem="Jak-ew-Bh0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hOV-dt-gKE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7l4-52-p5f" secondAttribute="bottom" constant="20" id="lOr-0n-oCq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Jak-ew-Bh0" id="nbH-Yf-xRx"/>
+                        <outlet property="spotRandomPokemon" destination="7l4-52-p5f" id="EqD-iP-Vaf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pokeball" width="97" height="96"/>
+    </resources>
+</document>

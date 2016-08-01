@@ -1,7 +1,7 @@
 import Foundation
-import CoreLocation
+import MapKit
 
-class OldPlace {
+class OldPlace : NSObject {
   
   let location:CLLocation
   let name : String
@@ -11,6 +11,20 @@ class OldPlace {
     self.location = CLLocation(latitude: latitude, longitude:longitude)
     self.name = name
     self.imageName = imageName
+  }
+  
+}
+
+extension OldPlace : MKAnnotation {
+  
+  var coordinate: CLLocationCoordinate2D {
+    get {
+      return location.coordinate
+    }
+  }
+  
+  var title:String? {
+    return name
   }
   
 }

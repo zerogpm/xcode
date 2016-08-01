@@ -28,9 +28,17 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "MapSegue" {
+      let mapController = segue.destinationViewController as! mapVCViewController
+      mapController.selectedPlace = selectedPlaces
+      mapController.places = places
+    }
+  }
+  
   
   @IBAction func startLocationService(sender: AnyObject) {
-    
+    startLocationService()
   }
   
   func startLocationService() {

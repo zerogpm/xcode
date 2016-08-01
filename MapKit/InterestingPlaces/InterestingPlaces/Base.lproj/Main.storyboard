@@ -135,7 +135,7 @@
                                         <state key="normal" image="globe"/>
                                         <connections>
                                             <action selector="startLocationService:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HYf-vN-7Q3"/>
-                                            <segue destination="Qqu-oV-0a4" kind="modal" id="Iy0-db-HeR"/>
+                                            <segue destination="Qqu-oV-0a4" kind="modal" identifier="MapSegue" id="Iy0-db-HeR"/>
                                         </connections>
                                     </button>
                                 </subviews>
