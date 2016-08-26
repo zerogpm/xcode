@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import FirebaseDatabase
 
 class ViewController: UIViewController {
   
@@ -15,11 +16,15 @@ class ViewController: UIViewController {
   
   let locationManager = CLLocationManager()
   var mapHasCenteredOnce = false
+  var geoFire:GeoFire!
+  var geoFireRef: FIRDatabaseReference!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     mapView.delegate = self
     mapView.userTrackingMode = MKUserTrackingMode.Follow
+    
+    //geoFireRef = FIRDatabase.database().reference()
   }
   
   override func viewDidAppear(animated: Bool) {
