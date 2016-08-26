@@ -40,7 +40,23 @@ class ViewController: UIViewController {
     }
   }
   
-  @IBOutlet weak var spotRandomPokemon: UIButton!
+  func createSignting(location:CLLocation, pokeid:Int) {
+    //make network request for  saving pokeMon
+    // pass location and pokemon id for  saving query database
+  }
+  
+  func showSightingsOnMap(location:CLLocation) {
+    //make network request
+    //passing in location and Radius
+    let anno = PokeAnnotation(coordinate: location.coordinate, pokemonNumber: Int(1), pokemonName: "PikaChu")
+    self.mapView.addAnnotation(anno)
+  }
+  
+ 
+  @IBAction func spotRandomPokemon(sender: UIButton) {
+    let loc = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
+    createSignting(loc, pokeid: 1)
+  }
   
 }
 
@@ -56,14 +72,43 @@ extension ViewController: MKMapViewDelegate {
   
   func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
     
+    let annoIdentifier = "Pokemon"
     var annotationView: MKAnnotationView?
     
     if annotation.isKindOfClass(MKUserLocation.self) {
       annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "User")
       annotationView?.image = UIImage(named: "ash")
+    } else if let deqAnno = mapView.dequeueReusableAnnotationViewWithIdentifier(annoIdentifier) {
+      annotationView = deqAnno
+      annotationView?.annotation = annotation
+    } else {
+      let av = MKAnnotationView(annotation: annotation, reuseIdentifier: annoIdentifier)
+      av.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure)
+      annotationView = av
+    }
+    
+    if let annotationView = annotationView, let anno = annotation as? PokeAnnotation {
+      
+      annotationView.canShowCallout = true
+      annotationView.image = UIImage(named:"\(anno.pokemonNumber)")
+      let btn = UIButton()
+      btn.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+      btn.setImage(UIImage(named:"map"), forState: .Normal)
+      annotationView.rightCalloutAccessoryView = btn
     }
     
     return annotationView
+  }
+  
+  func mapView(mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
+    let loc = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
+    showSightingsOnMap(loc)
+  }
+  
+  func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+    if let anno = view.annotation as? PokeAnnotation {
+      
+    }
   }
 }
 

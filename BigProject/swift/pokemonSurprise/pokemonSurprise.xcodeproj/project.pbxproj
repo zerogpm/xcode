@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8747643E1D51B3E1000F66AC /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8747643D1D51B3E1000F66AC /* PokeAnnotation.swift */; };
 		87FFC1D41D4EF49A00382238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FFC1D31D4EF49A00382238 /* AppDelegate.swift */; };
 		87FFC1D61D4EF49A00382238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FFC1D51D4EF49A00382238 /* ViewController.swift */; };
 		87FFC1D91D4EF49A00382238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FFC1D71D4EF49A00382238 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8747643D1D51B3E1000F66AC /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 		87FFC1D01D4EF49A00382238 /* pokemonSurprise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokemonSurprise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FFC1D31D4EF49A00382238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87FFC1D51D4EF49A00382238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8747643A1D51AF43000F66AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				87FFC1D51D4EF49A00382238 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8747643B1D51AF5A000F66AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8747643D1D51B3E1000F66AC /* PokeAnnotation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8747643C1D51AF62000F66AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		87FFC1C71D4EF49A00382238 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +83,10 @@
 		87FFC1D21D4EF49A00382238 /* pokemonSurprise */ = {
 			isa = PBXGroup;
 			children = (
+				8747643C1D51AF62000F66AC /* View */,
+				8747643B1D51AF5A000F66AC /* Model */,
+				8747643A1D51AF43000F66AC /* Controller */,
 				87FFC1D31D4EF49A00382238 /* AppDelegate.swift */,
-				87FFC1D51D4EF49A00382238 /* ViewController.swift */,
 				87FFC1D71D4EF49A00382238 /* Main.storyboard */,
 				87FFC1DA1D4EF49A00382238 /* Assets.xcassets */,
 				87FFC1DC1D4EF49A00382238 /* LaunchScreen.storyboard */,
@@ -141,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87FFC1D61D4EF49A00382238 /* ViewController.swift in Sources */,
+				8747643E1D51B3E1000F66AC /* PokeAnnotation.swift in Sources */,
 				87FFC1D41D4EF49A00382238 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
