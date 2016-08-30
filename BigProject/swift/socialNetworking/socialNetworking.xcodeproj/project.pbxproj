@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87A93BB81D754AED00FADF2F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87A93BB71D754AED00FADF2F /* Default-568h@2x.png */; };
 		87C7E82E1D6FE887001E9056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C7E82D1D6FE887001E9056 /* AppDelegate.swift */; };
 		87C7E8301D6FE887001E9056 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C7E82F1D6FE887001E9056 /* LoginVC.swift */; };
 		87C7E8331D6FE887001E9056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C7E8311D6FE887001E9056 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87A93BB71D754AED00FADF2F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		87C7E82A1D6FE887001E9056 /* socialNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C7E82D1D6FE887001E9056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C7E82F1D6FE887001E9056 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		87C7E8211D6FE887001E9056 = {
 			isa = PBXGroup;
 			children = (
+				87A93BB71D754AED00FADF2F /* Default-568h@2x.png */,
 				87C7E82C1D6FE887001E9056 /* socialNetworking */,
 				87C7E82B1D6FE887001E9056 /* Products */,
 			);
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87C7E8381D6FE887001E9056 /* LaunchScreen.storyboard in Resources */,
+				87A93BB81D754AED00FADF2F /* Default-568h@2x.png in Resources */,
 				87C7E8351D6FE887001E9056 /* Assets.xcassets in Resources */,
 				87C7E8331D6FE887001E9056 /* Main.storyboard in Resources */,
 			);
@@ -279,6 +283,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = design.chrissu.socialNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -290,6 +295,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = design.chrissu.socialNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -312,6 +318,7 @@
 				87C7E83E1D6FE887001E9056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
