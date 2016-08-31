@@ -25,7 +25,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
   }
   
   func textFieldDidBeginEditing(textField: UITextField) {
-    scroll.setContentOffset(CGPointMake(0, 200), animated: true)
+    scroll.setContentOffset(CGPointMake(0, 100), animated: true)
   }
   
   func textFieldDidEndEditing(textField: UITextField) {

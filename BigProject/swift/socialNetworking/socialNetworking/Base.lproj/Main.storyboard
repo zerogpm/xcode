@@ -26,23 +26,61 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallPage" translatesAutoresizingMaskIntoConstraints="NO" id="jXA-jc-fHd">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                             </imageView>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ONZ-at-vnp">
-                                                <rect key="frame" x="64" y="106" width="97" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dM0-wK-Ouf">
+                                                <rect key="frame" x="20" y="83" width="560" height="75"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ONZ-at-vnp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="faW-EY-pUG">
+                                                        <rect key="frame" x="0.0" y="45" width="560" height="30"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="faW-EY-pUG" firstAttribute="width" secondItem="ONZ-at-vnp" secondAttribute="width" id="Cu6-3S-7xk"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fair Medicine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ws2-Nu-KgD">
+                                                <rect key="frame" x="249" y="41" width="103" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RVv-if-yY6">
+                                                <rect key="frame" x="20" y="178" width="269" height="30"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3Y-ok-aSR">
-                                                <rect key="frame" x="64" y="217" width="97" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3Y-ok-aSR">
+                                                <rect key="frame" x="311" y="178" width="269" height="30"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="ws2-Nu-KgD" firstAttribute="centerX" secondItem="9Ef-Cg-a8N" secondAttribute="centerX" id="7ir-36-qEo"/>
+                                            <constraint firstItem="RVv-if-yY6" firstAttribute="bottom" secondItem="c3Y-ok-aSR" secondAttribute="bottom" id="8xk-0d-rs1"/>
+                                            <constraint firstAttribute="trailing" secondItem="dM0-wK-Ouf" secondAttribute="trailing" constant="20" id="DUT-cg-Dgb"/>
+                                            <constraint firstItem="c3Y-ok-aSR" firstAttribute="leading" secondItem="RVv-if-yY6" secondAttribute="trailing" constant="22" id="JFi-Du-3c3"/>
                                             <constraint firstItem="jXA-jc-fHd" firstAttribute="top" secondItem="9Ef-Cg-a8N" secondAttribute="top" id="N1C-G8-HqS"/>
+                                            <constraint firstItem="c3Y-ok-aSR" firstAttribute="width" secondItem="RVv-if-yY6" secondAttribute="width" id="RIN-Yb-Zlh"/>
+                                            <constraint firstItem="RVv-if-yY6" firstAttribute="top" secondItem="c3Y-ok-aSR" secondAttribute="top" id="RfN-0Y-gpJ"/>
+                                            <constraint firstItem="dM0-wK-Ouf" firstAttribute="top" secondItem="ws2-Nu-KgD" secondAttribute="bottom" constant="22" id="bcY-kk-58Y"/>
+                                            <constraint firstItem="ws2-Nu-KgD" firstAttribute="top" secondItem="9Ef-Cg-a8N" secondAttribute="top" constant="41" id="bzJ-Sl-Eao"/>
+                                            <constraint firstItem="c3Y-ok-aSR" firstAttribute="top" secondItem="dM0-wK-Ouf" secondAttribute="bottom" constant="20" id="e2t-A0-PkC"/>
                                             <constraint firstAttribute="trailing" secondItem="jXA-jc-fHd" secondAttribute="trailing" id="fU3-dK-6WH"/>
                                             <constraint firstAttribute="bottom" secondItem="jXA-jc-fHd" secondAttribute="bottom" id="flY-h9-ROX"/>
+                                            <constraint firstItem="c3Y-ok-aSR" firstAttribute="leading" secondItem="RVv-if-yY6" secondAttribute="trailing" constant="22" id="lrC-1f-FUN"/>
+                                            <constraint firstItem="RVv-if-yY6" firstAttribute="top" secondItem="dM0-wK-Ouf" secondAttribute="bottom" constant="20" id="o4D-xa-E3i"/>
+                                            <constraint firstItem="dM0-wK-Ouf" firstAttribute="leading" secondItem="9Ef-Cg-a8N" secondAttribute="leading" constant="20" id="qay-Z3-dZ7"/>
+                                            <constraint firstItem="RVv-if-yY6" firstAttribute="leading" secondItem="9Ef-Cg-a8N" secondAttribute="leading" constant="20" id="s3N-cu-df4"/>
                                             <constraint firstItem="jXA-jc-fHd" firstAttribute="leading" secondItem="9Ef-Cg-a8N" secondAttribute="leading" id="tQ3-Vg-ZmA"/>
+                                            <constraint firstAttribute="trailing" secondItem="c3Y-ok-aSR" secondAttribute="trailing" constant="20" id="uVB-ZK-peH"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -71,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="478" y="379"/>
+            <point key="canvasLocation" x="275" y="403"/>
         </scene>
     </scenes>
     <resources>
