@@ -82,6 +82,7 @@ class PhotosCollectionViewController: UICollectionViewController
       let detailTVC = segue.destination as! DetailTableViewController
       let selectedCategory = photoCategories[selectedIndexPath.section]
       detailTVC.image = UIImage(named: selectedCategory.imageNames[selectedIndexPath.item])
+      detailTVC.category = selectedCategory.title
     }
   }
 }

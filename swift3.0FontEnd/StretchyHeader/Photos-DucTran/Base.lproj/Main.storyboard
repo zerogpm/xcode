@@ -95,20 +95,20 @@
             </objects>
             <point key="canvasLocation" x="948" y="171"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Detail Table View Controller-->
         <scene sceneID="fgi-Ck-t1j">
             <objects>
-                <tableViewController id="oTO-z6-kK1" sceneMemberID="viewController">
+                <tableViewController id="oTO-z6-kK1" customClass="DetailTableViewController" customModule="Photos_DucTran" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="28" sectionFooterHeight="28" id="bUe-a6-e0f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="vFD-LD-HIQ" customClass="DetailHeaderViewL" customModule="Photos_DucTran" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="348"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="vFD-LD-HIQ" customClass="DetailHeaderView" customModule="Photos_DucTran" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="327"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f3" translatesAutoresizingMaskIntoConstraints="NO" id="CG4-qC-ghR">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="348"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="327"/>
                                 </imageView>
                             </subviews>
                             <constraints>
@@ -122,8 +122,8 @@
                             </connections>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="l4T-Dm-O1f" customClass="CommentTableViewCell" customModule="Photos_DucTran" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="376" width="375" height="65"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" rowHeight="65" id="l4T-Dm-O1f" customClass="CommentTableViewCell" customModule="Photos_DucTran" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="355" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l4T-Dm-O1f" id="MQe-dI-q7F">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>

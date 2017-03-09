@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailHeaderViewL: UIView {
+class DetailHeaderView: UIView {
   
   @IBOutlet weak var imageView: UIImageView!
   
