@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--LoginVC-->
@@ -14,55 +15,78 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TbT-MX-8ct">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TbT-MX-8ct">
+                                <frame key="frameInset" width="600" height="600"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ef-Cg-a8N">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ef-Cg-a8N">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallPage" translatesAutoresizingMaskIntoConstraints="NO" id="jXA-jc-fHd">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="wallPage" translatesAutoresizingMaskIntoConstraints="NO" id="jXA-jc-fHd">
+                                                <frame key="frameInset" width="600" height="600"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dM0-wK-Ouf">
-                                                <rect key="frame" x="20" y="83" width="560" height="75"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ONZ-at-vnp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="faW-EY-pUG">
-                                                        <rect key="frame" x="0.0" y="45" width="560" height="30"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="faW-EY-pUG" firstAttribute="width" secondItem="ONZ-at-vnp" secondAttribute="width" id="Cu6-3S-7xk"/>
                                                 </constraints>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fair Medicine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ws2-Nu-KgD">
-                                                <rect key="frame" x="249" y="41" width="103" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fair Medicine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ws2-Nu-KgD">
+                                                <frame key="frameInset" minX="249" minY="41" width="103" height="20"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RVv-if-yY6">
-                                                <rect key="frame" x="20" y="178" width="269" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RVv-if-yY6">
+                                                <frame key="frameInset" minX="20" minY="178" width="269" height="30"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3Y-ok-aSR">
-                                                <rect key="frame" x="311" y="178" width="269" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3Y-ok-aSR">
+                                                <frame key="frameInset" minX="311" minY="178" width="269" height="30"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="GmO-ui-fXF">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygD-vK-wAv">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="0bh-nH-ChB"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <state key="normal" title="Register">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="RegisterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iPo-OS-Ku0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8a-vY-3h6">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="MnX-Z4-cky"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <state key="normal" title="Already have an account?">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="GmO-ui-fXF" firstAttribute="top" secondItem="RVv-if-yY6" secondAttribute="bottom" constant="20" id="22B-pv-G8y"/>
                                             <constraint firstItem="ws2-Nu-KgD" firstAttribute="centerX" secondItem="9Ef-Cg-a8N" secondAttribute="centerX" id="7ir-36-qEo"/>
                                             <constraint firstItem="RVv-if-yY6" firstAttribute="bottom" secondItem="c3Y-ok-aSR" secondAttribute="bottom" id="8xk-0d-rs1"/>
                                             <constraint firstAttribute="trailing" secondItem="dM0-wK-Ouf" secondAttribute="trailing" constant="20" id="DUT-cg-Dgb"/>
@@ -75,6 +99,7 @@
                                             <constraint firstItem="c3Y-ok-aSR" firstAttribute="top" secondItem="dM0-wK-Ouf" secondAttribute="bottom" constant="20" id="e2t-A0-PkC"/>
                                             <constraint firstAttribute="trailing" secondItem="jXA-jc-fHd" secondAttribute="trailing" id="fU3-dK-6WH"/>
                                             <constraint firstAttribute="bottom" secondItem="jXA-jc-fHd" secondAttribute="bottom" id="flY-h9-ROX"/>
+                                            <constraint firstItem="GmO-ui-fXF" firstAttribute="leading" secondItem="9Ef-Cg-a8N" secondAttribute="leading" constant="20" id="jvD-n4-Mxw"/>
                                             <constraint firstItem="c3Y-ok-aSR" firstAttribute="leading" secondItem="RVv-if-yY6" secondAttribute="trailing" constant="22" id="lrC-1f-FUN"/>
                                             <constraint firstItem="RVv-if-yY6" firstAttribute="top" secondItem="dM0-wK-Ouf" secondAttribute="bottom" constant="20" id="o4D-xa-E3i"/>
                                             <constraint firstItem="dM0-wK-Ouf" firstAttribute="leading" secondItem="9Ef-Cg-a8N" secondAttribute="leading" constant="20" id="qay-Z3-dZ7"/>
@@ -92,7 +117,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="TbT-MX-8ct" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0MN-m9-nfG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TbT-MX-8ct" secondAttribute="bottom" id="1Gp-xk-EuT"/>
@@ -103,13 +128,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="email" destination="ONZ-at-vnp" id="0hx-G6-biq"/>
+                        <outlet property="firstNameTextField" destination="RVv-if-yY6" id="mzf-zX-Uay"/>
+                        <outlet property="lastNameTextField" destination="c3Y-ok-aSR" id="vri-bE-iEk"/>
+                        <outlet property="password" destination="faW-EY-pUG" id="iMj-sC-gKy"/>
                         <outlet property="scroll" destination="TbT-MX-8ct" id="Ims-X5-nVZ"/>
-                        <outlet property="textField" destination="c3Y-ok-aSR" id="GPg-n2-lmP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="275" y="403"/>
+            <point key="canvasLocation" x="-634" y="491"/>
         </scene>
     </scenes>
     <resources>
