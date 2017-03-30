@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		877026151E8B7DB20046517C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877026141E8B7DB20046517C /* AppDelegate.swift */; };
+		877026181E8B7DB20046517C /* Borrowmatic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 877026161E8B7DB20046517C /* Borrowmatic.xcdatamodeld */; };
+		8770261A1E8B7DB20046517C /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877026191E8B7DB20046517C /* MasterViewController.swift */; };
+		8770261C1E8B7DB20046517C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8770261B1E8B7DB20046517C /* DetailViewController.swift */; };
+		8770261F1E8B7DB20046517C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8770261D1E8B7DB20046517C /* Main.storyboard */; };
+		877026211E8B7DB20046517C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 877026201E8B7DB20046517C /* Assets.xcassets */; };
+		877026241E8B7DB20046517C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877026221E8B7DB20046517C /* LaunchScreen.storyboard */; };
+		8770262C1E8CAB9B0046517C /* UIImage+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8770262B1E8CAB9B0046517C /* UIImage+Scale.swift */; };
+		877026481E8CCADC0046517C /* GLCalendarDateRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 877026341E8CCADC0046517C /* GLCalendarDateRange.m */; };
+		877026491E8CCADC0046517C /* GLCalendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 877026371E8CCADC0046517C /* GLCalendarDayCell.m */; };
+		8770264A1E8CCADC0046517C /* GLCalendarDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 877026381E8CCADC0046517C /* GLCalendarDayCell.xib */; };
+		8770264B1E8CCADC0046517C /* GLCalendarDayCellBackgroundCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 8770263A1E8CCADC0046517C /* GLCalendarDayCellBackgroundCover.m */; };
+		8770264C1E8CCADC0046517C /* GLCalendarMonthCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8770263C1E8CCADC0046517C /* GLCalendarMonthCoverView.m */; };
+		8770264D1E8CCADC0046517C /* GLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8770263E1E8CCADC0046517C /* GLCalendarView.m */; };
+		8770264E1E8CCADC0046517C /* GLCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8770263F1E8CCADC0046517C /* GLCalendarView.xib */; };
+		8770264F1E8CCADC0046517C /* GLDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 877026411E8CCADC0046517C /* GLDateUtils.m */; };
+		877026501E8CCADC0046517C /* gl-calendar-magnify-glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 877026431E8CCADC0046517C /* gl-calendar-magnify-glass.png */; };
+		877026511E8CCADC0046517C /* gl-calendar-magnify-glass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 877026441E8CCADC0046517C /* gl-calendar-magnify-glass@2x.png */; };
+		877026521E8CCADC0046517C /* gl-calendar-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 877026451E8CCADC0046517C /* gl-calendar-shadow.png */; };
+		877026531E8CCADC0046517C /* gl-calendar-shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 877026461E8CCADC0046517C /* gl-calendar-shadow@2x.png */; };
+		877026541E8CCADC0046517C /* gl-calendar-shadow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 877026471E8CCADC0046517C /* gl-calendar-shadow@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		877026111E8B7DB20046517C /* Borrowmatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Borrowmatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		877026141E8B7DB20046517C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		877026171E8B7DB20046517C /* Borrowmatic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Borrowmatic.xcdatamodel; sourceTree = "<group>"; };
+		877026191E8B7DB20046517C /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		8770261B1E8B7DB20046517C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8770261E1E8B7DB20046517C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		877026201E8B7DB20046517C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		877026231E8B7DB20046517C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		877026251E8B7DB20046517C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8770262B1E8CAB9B0046517C /* UIImage+Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Scale.swift"; sourceTree = "<group>"; };
+		8770262F1E8CC5F00046517C /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		877026331E8CCADC0046517C /* GLCalendarDateRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCalendarDateRange.h; sourceTree = "<group>"; };
+		877026341E8CCADC0046517C /* GLCalendarDateRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCalendarDateRange.m; sourceTree = "<group>"; };
+		877026361E8CCADC0046517C /* GLCalendarDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCalendarDayCell.h; sourceTree = "<group>"; };
+		877026371E8CCADC0046517C /* GLCalendarDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCalendarDayCell.m; sourceTree = "<group>"; };
+		877026381E8CCADC0046517C /* GLCalendarDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLCalendarDayCell.xib; sourceTree = "<group>"; };
+		877026391E8CCADC0046517C /* GLCalendarDayCellBackgroundCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCalendarDayCellBackgroundCover.h; sourceTree = "<group>"; };
+		8770263A1E8CCADC0046517C /* GLCalendarDayCellBackgroundCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCalendarDayCellBackgroundCover.m; sourceTree = "<group>"; };
+		8770263B1E8CCADC0046517C /* GLCalendarMonthCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCalendarMonthCoverView.h; sourceTree = "<group>"; };
+		8770263C1E8CCADC0046517C /* GLCalendarMonthCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCalendarMonthCoverView.m; sourceTree = "<group>"; };
+		8770263D1E8CCADC0046517C /* GLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCalendarView.h; sourceTree = "<group>"; };
+		8770263E1E8CCADC0046517C /* GLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCalendarView.m; sourceTree = "<group>"; };
+		8770263F1E8CCADC0046517C /* GLCalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLCalendarView.xib; sourceTree = "<group>"; };
+		877026401E8CCADC0046517C /* GLDateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDateUtils.h; sourceTree = "<group>"; };
+		877026411E8CCADC0046517C /* GLDateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDateUtils.m; sourceTree = "<group>"; };
+		877026431E8CCADC0046517C /* gl-calendar-magnify-glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gl-calendar-magnify-glass.png"; sourceTree = "<group>"; };
+		877026441E8CCADC0046517C /* gl-calendar-magnify-glass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gl-calendar-magnify-glass@2x.png"; sourceTree = "<group>"; };
+		877026451E8CCADC0046517C /* gl-calendar-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gl-calendar-shadow.png"; sourceTree = "<group>"; };
+		877026461E8CCADC0046517C /* gl-calendar-shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gl-calendar-shadow@2x.png"; sourceTree = "<group>"; };
+		877026471E8CCADC0046517C /* gl-calendar-shadow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gl-calendar-shadow@3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8770260E1E8B7DB20046517C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		877026081E8B7DB20046517C = {
+			isa = PBXGroup;
+			children = (
+				877026131E8B7DB20046517C /* Borrowmatic */,
+				877026121E8B7DB20046517C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		877026121E8B7DB20046517C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				877026111E8B7DB20046517C /* Borrowmatic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		877026131E8B7DB20046517C /* Borrowmatic */ = {
+			isa = PBXGroup;
+			children = (
+				877026321E8CCADC0046517C /* Sources */,
+				8770262B1E8CAB9B0046517C /* UIImage+Scale.swift */,
+				877026141E8B7DB20046517C /* AppDelegate.swift */,
+				877026191E8B7DB20046517C /* MasterViewController.swift */,
+				8770261B1E8B7DB20046517C /* DetailViewController.swift */,
+				8770262F1E8CC5F00046517C /* BridgingHeader.h */,
+				8770261D1E8B7DB20046517C /* Main.storyboard */,
+				877026201E8B7DB20046517C /* Assets.xcassets */,
+				877026221E8B7DB20046517C /* LaunchScreen.storyboard */,
+				877026251E8B7DB20046517C /* Info.plist */,
+				877026161E8B7DB20046517C /* Borrowmatic.xcdatamodeld */,
+			);
+			path = Borrowmatic;
+			sourceTree = "<group>";
+		};
+		877026321E8CCADC0046517C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				877026331E8CCADC0046517C /* GLCalendarDateRange.h */,
+				877026341E8CCADC0046517C /* GLCalendarDateRange.m */,
+				877026351E8CCADC0046517C /* GLCalendarDayCell */,
+				8770263B1E8CCADC0046517C /* GLCalendarMonthCoverView.h */,
+				8770263C1E8CCADC0046517C /* GLCalendarMonthCoverView.m */,
+				8770263D1E8CCADC0046517C /* GLCalendarView.h */,
+				8770263E1E8CCADC0046517C /* GLCalendarView.m */,
+				8770263F1E8CCADC0046517C /* GLCalendarView.xib */,
+				877026401E8CCADC0046517C /* GLDateUtils.h */,
+				877026411E8CCADC0046517C /* GLDateUtils.m */,
+				877026421E8CCADC0046517C /* Images */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		877026351E8CCADC0046517C /* GLCalendarDayCell */ = {
+			isa = PBXGroup;
+			children = (
+				877026361E8CCADC0046517C /* GLCalendarDayCell.h */,
+				877026371E8CCADC0046517C /* GLCalendarDayCell.m */,
+				877026381E8CCADC0046517C /* GLCalendarDayCell.xib */,
+				877026391E8CCADC0046517C /* GLCalendarDayCellBackgroundCover.h */,
+				8770263A1E8CCADC0046517C /* GLCalendarDayCellBackgroundCover.m */,
+			);
+			path = GLCalendarDayCell;
+			sourceTree = "<group>";
+		};
+		877026421E8CCADC0046517C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				877026431E8CCADC0046517C /* gl-calendar-magnify-glass.png */,
+				877026441E8CCADC0046517C /* gl-calendar-magnify-glass@2x.png */,
+				877026451E8CCADC0046517C /* gl-calendar-shadow.png */,
+				877026461E8CCADC0046517C /* gl-calendar-shadow@2x.png */,
+				877026471E8CCADC0046517C /* gl-calendar-shadow@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		877026101E8B7DB20046517C /* Borrowmatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 877026281E8B7DB20046517C /* Build configuration list for PBXNativeTarget "Borrowmatic" */;
+			buildPhases = (
+				8770260D1E8B7DB20046517C /* Sources */,
+				8770260E1E8B7DB20046517C /* Frameworks */,
+				8770260F1E8B7DB20046517C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Borrowmatic;
+			productName = Borrowmatic;
+			productReference = 877026111E8B7DB20046517C /* Borrowmatic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		877026091E8B7DB20046517C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ZeroTech;
+				TargetAttributes = {
+					877026101E8B7DB20046517C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3PR8S38549;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8770260C1E8B7DB20046517C /* Build configuration list for PBXProject "Borrowmatic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 877026081E8B7DB20046517C;
+			productRefGroup = 877026121E8B7DB20046517C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				877026101E8B7DB20046517C /* Borrowmatic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8770260F1E8B7DB20046517C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877026241E8B7DB20046517C /* LaunchScreen.storyboard in Resources */,
+				877026511E8CCADC0046517C /* gl-calendar-magnify-glass@2x.png in Resources */,
+				877026541E8CCADC0046517C /* gl-calendar-shadow@3x.png in Resources */,
+				877026501E8CCADC0046517C /* gl-calendar-magnify-glass.png in Resources */,
+				8770264A1E8CCADC0046517C /* GLCalendarDayCell.xib in Resources */,
+				8770264E1E8CCADC0046517C /* GLCalendarView.xib in Resources */,
+				877026211E8B7DB20046517C /* Assets.xcassets in Resources */,
+				877026521E8CCADC0046517C /* gl-calendar-shadow.png in Resources */,
+				8770261F1E8B7DB20046517C /* Main.storyboard in Resources */,
+				877026531E8CCADC0046517C /* gl-calendar-shadow@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8770260D1E8B7DB20046517C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877026481E8CCADC0046517C /* GLCalendarDateRange.m in Sources */,
+				877026151E8B7DB20046517C /* AppDelegate.swift in Sources */,
+				8770264F1E8CCADC0046517C /* GLDateUtils.m in Sources */,
+				877026181E8B7DB20046517C /* Borrowmatic.xcdatamodeld in Sources */,
+				8770264C1E8CCADC0046517C /* GLCalendarMonthCoverView.m in Sources */,
+				8770264B1E8CCADC0046517C /* GLCalendarDayCellBackgroundCover.m in Sources */,
+				8770261A1E8B7DB20046517C /* MasterViewController.swift in Sources */,
+				877026491E8CCADC0046517C /* GLCalendarDayCell.m in Sources */,
+				8770262C1E8CAB9B0046517C /* UIImage+Scale.swift in Sources */,
+				8770261C1E8B7DB20046517C /* DetailViewController.swift in Sources */,
+				8770264D1E8CCADC0046517C /* GLCalendarView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8770261D1E8B7DB20046517C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8770261E1E8B7DB20046517C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		877026221E8B7DB20046517C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				877026231E8B7DB20046517C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		877026261E8B7DB20046517C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		877026271E8B7DB20046517C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		877026291E8B7DB20046517C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3PR8S38549;
+				INFOPLIST_FILE = Borrowmatic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = design.chrissu.Borrowmatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Borrowmatic/BridgingHeader.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8770262A1E8B7DB20046517C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3PR8S38549;
+				INFOPLIST_FILE = Borrowmatic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = design.chrissu.Borrowmatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Borrowmatic/BridgingHeader.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8770260C1E8B7DB20046517C /* Build configuration list for PBXProject "Borrowmatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877026261E8B7DB20046517C /* Debug */,
+				877026271E8B7DB20046517C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		877026281E8B7DB20046517C /* Build configuration list for PBXNativeTarget "Borrowmatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877026291E8B7DB20046517C /* Debug */,
+				8770262A1E8B7DB20046517C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		877026161E8B7DB20046517C /* Borrowmatic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				877026171E8B7DB20046517C /* Borrowmatic.xcdatamodel */,
+			);
+			currentVersion = 877026171E8B7DB20046517C /* Borrowmatic.xcdatamodel */;
+			path = Borrowmatic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 877026091E8B7DB20046517C /* Project object */;
+}
