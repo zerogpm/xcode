@@ -28,6 +28,7 @@
 		877026521E8CCADC0046517C /* gl-calendar-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 877026451E8CCADC0046517C /* gl-calendar-shadow.png */; };
 		877026531E8CCADC0046517C /* gl-calendar-shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 877026461E8CCADC0046517C /* gl-calendar-shadow@2x.png */; };
 		877026541E8CCADC0046517C /* gl-calendar-shadow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 877026471E8CCADC0046517C /* gl-calendar-shadow@3x.png */; };
+		877026571E8D58450046517C /* TimeframeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877026561E8D58450046517C /* TimeframeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		877026451E8CCADC0046517C /* gl-calendar-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gl-calendar-shadow.png"; sourceTree = "<group>"; };
 		877026461E8CCADC0046517C /* gl-calendar-shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gl-calendar-shadow@2x.png"; sourceTree = "<group>"; };
 		877026471E8CCADC0046517C /* gl-calendar-shadow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gl-calendar-shadow@3x.png"; sourceTree = "<group>"; };
+		877026561E8D58450046517C /* TimeframeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeframeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,11 +95,11 @@
 		877026131E8B7DB20046517C /* Borrowmatic */ = {
 			isa = PBXGroup;
 			children = (
-				877026321E8CCADC0046517C /* Sources */,
-				8770262B1E8CAB9B0046517C /* UIImage+Scale.swift */,
+				877026551E8D54F20046517C /* Helper */,
 				877026141E8B7DB20046517C /* AppDelegate.swift */,
 				877026191E8B7DB20046517C /* MasterViewController.swift */,
 				8770261B1E8B7DB20046517C /* DetailViewController.swift */,
+				877026561E8D58450046517C /* TimeframeViewController.swift */,
 				8770262F1E8CC5F00046517C /* BridgingHeader.h */,
 				8770261D1E8B7DB20046517C /* Main.storyboard */,
 				877026201E8B7DB20046517C /* Assets.xcassets */,
@@ -148,6 +150,15 @@
 				877026471E8CCADC0046517C /* gl-calendar-shadow@3x.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		877026551E8D54F20046517C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				877026321E8CCADC0046517C /* Sources */,
+				8770262B1E8CAB9B0046517C /* UIImage+Scale.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				877026481E8CCADC0046517C /* GLCalendarDateRange.m in Sources */,
+				877026571E8D58450046517C /* TimeframeViewController.swift in Sources */,
 				877026151E8B7DB20046517C /* AppDelegate.swift in Sources */,
 				8770264F1E8CCADC0046517C /* GLDateUtils.m in Sources */,
 				877026181E8B7DB20046517C /* Borrowmatic.xcdatamodeld in Sources */,
